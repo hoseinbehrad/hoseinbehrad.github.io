@@ -1,0 +1,1643 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H870BTC8SR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-H870BTC8SR');
+  </script>
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Zhaofeng Wu &middot; Home
+    
+  </title>
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png">
+  <link rel="manifest" href="/public/site.webmanifest">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="/public/css/custom.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+  <script src="https://kit.fontawesome.com/048d1aee24.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Home | Zhaofeng Wu</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Home" />
+<meta name="author" content="Zhaofeng Wu" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Linguistical computationist" />
+<meta property="og:description" content="Linguistical computationist" />
+<link rel="canonical" href="https://zhaofengwu.github.io//" />
+<meta property="og:url" content="https://zhaofengwu.github.io//" />
+<meta property="og:site_name" content="Zhaofeng Wu" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Home" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Zhaofeng Wu","url":"https://zhaofengwu.github.io/"},"description":"Linguistical computationist","headline":"Home","name":"Zhaofeng Wu","url":"https://zhaofengwu.github.io//"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="full-sized-child" id="sidebar-bg-img"></div>
+  <div class="full-sized-child" id="gradient-mask"></div>
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        Zhaofeng Wu
+      </h1>
+
+      <div class="secondary-names">
+        <h2 class="ipa">
+          /
+          ʤ̺̊<span class="neg-letter-spacing">a</span><span class="large-diacritic">&#x0361</span>u<span class="tone">˥˩</span>
+          fəŋ<span class="tone">˥</span>
+          u<span class="tone">˧˥</span>
+          /
+          <a id="name-pronunciation" href="https://translate.google.com/?sl=zh-CN&tl=en&text=%E8%82%87%E9%94%8B%20%E5%90%B4" target="_blank" rel="noopener noreferrer"><i class="fas fa-headphones"></i></a>
+        </h2>
+        <h2 class="chinese-name">
+          吴肇锋
+        </h2>
+      </div>
+
+      <p class="lead">Linguistical computationist</p>
+
+      <div class="social-links"><a class="social-link" href="https://scholar.google.com/citations?user=53baCywAAAAJ" target="_blank" rel="noopener noreferrer"><i class="ai ai-google-scholar"></i></a><a class="social-link" href="https://www.semanticscholar.org/author/47039405" target="_blank" rel="noopener noreferrer"><i class="ai ai-semantic-scholar"></i></a><a class="social-link" href="https://github.com/ZhaofengWu" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a><a class="social-link" href="https://www.twitter.com/zhaofeng_wu" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a><a class="social-link" href="mailto:zfw%40csail.mit.edu" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a></div>
+    </div>
+
+    <p class="copyright">&copy; 2025. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div>
+    <img src="/files/profile_photo.jpg" alt="Profile Photo" class="profile-photo" />
+</div>
+
+<p>Originally from Beijing, China, I am currently a Ph.D. student at <a href="https://web.mit.edu/" target="_blank&quot;,:rel=&quot;noopener noreferrer">MIT</a> <a href="https://www.csail.mit.edu/" target="_blank&quot;,:rel=&quot;noopener noreferrer">CSAIL</a> advised by <a href="https://people.csail.mit.edu/yoonkim/" target="_blank&quot;,:rel=&quot;noopener noreferrer">Yoon Kim</a>. I work on natural language processing. I received my M.S. in computer science, B.S. in computer science, and B.A. in linguistics from the <a href="https://www.washington.edu/" target="_blank&quot;,:rel=&quot;noopener noreferrer">University of Washington</a>.</p>
+
+<p>I love computers, languages, and teaching computers to understand languages. On this path, I have done research at the <a href="https://allenai.org/" target="_blank&quot;,:rel=&quot;noopener noreferrer">Allen Institute for Artificial Intelligence (AI2)</a> (as a <a href="https://allenai.org/predoctoral-young-investigators" target="_blank&quot;,:rel=&quot;noopener noreferrer">PYI</a>) and at the University of Washington with Prof. <a href="https://homes.cs.washington.edu/~nasmith/" target="_blank&quot;,:rel=&quot;noopener noreferrer">Noah Smith</a> and Prof. <a href="https://faculty.washington.edu/fxia/" target="_blank&quot;,:rel=&quot;noopener noreferrer">Fei Xia</a>. I have also worked on many interesting NLP and machine learning problems in the industry when I interned at Google, Meta, and other places.</p>
+
+<p>With <a href="https://alexisjihyeross.github.io/" target="_blank&quot;,:rel=&quot;noopener noreferrer">Alexis</a> and <a href="https://www.szj.io/" target="_blank&quot;,:rel=&quot;noopener noreferrer">Shannon</a>, we have built a platform, <a href="https://cs-sop.org" target="_blank&quot;,:rel=&quot;noopener noreferrer">cs-sop.org</a>, where past applicants to CS PhD programs have generously shared their statements of purpose and other advice. We hope this could be a useful resource for future applicants.</p>
+
+<div id="publication-header-container">
+  <h1>Publications</h1>
+  <p id="equal-contribution-note">* = Equal Contribution</p>
+</div>
+
+<ul id="pub-list">
+  
+  
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      <div><a href="https://arxiv.org/abs/2503.11751" target="_blank" rel="noopener noreferrer">reWordBench: Benchmarking and Improving the Robustness of Reward Models with Transformed Inputs</a></div>
+      
+      <div>
+        
+        
+        
+          
+          
+          
+          
+          
+            
+              <b>Zhaofeng Wu</b>,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Michihiro Yasunaga,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Andrew Cohen,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Yoon Kim,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Asli Celikyilmaz, and
+            
+          
+        
+          
+          
+          
+          
+          
+            Marjan Ghazvininejad
+          
+        
+      </div>
+      
+        <div>Unpublished manuscript, 2025.</div>
+      
+      
+      
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      <div><a href="https://arxiv.org/abs/2502.09604" target="_blank" rel="noopener noreferrer">SelfCite: Self-Supervised Alignment for Context Attribution in Large Language Models</a></div>
+      
+      <div>
+        
+        
+        
+          
+          
+          
+          
+          
+            
+              Yung-Sung Chuang,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Benjamin Cohen-Wang,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Shannon Zejiang Shen,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              <b>Zhaofeng Wu</b>,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Hu Xu,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Xi Victoria Lin,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              James Glass,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Shang-Wen Li, and
+            
+          
+        
+          
+          
+          
+          
+          
+            Wen-tau Yih
+          
+        
+      </div>
+      
+        <div>To appear in <i>International Conference on Machine Learning</i> (ICML), 2025.</div>
+      
+      
+      
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      <div><a href="https://arxiv.org/abs/2411.04986" target="_blank" rel="noopener noreferrer">The Semantic Hub Hypothesis: Language Models Share Semantic Representations Across Languages and Modalities</a></div>
+      
+      <div>
+        
+        
+        
+          
+          
+          
+          
+          
+            
+              <b>Zhaofeng Wu</b>,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Xinyan Velocity Yu,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Dani Yogatama,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Jiasen Lu, and
+            
+          
+        
+          
+          
+          
+          
+          
+            Yoon Kim
+          
+        
+      </div>
+      
+        <div>In <i>International Conference on Learning Representations</i> (ICLR), 2025.</div>
+      
+      
+      
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      <div><a href="https://arxiv.org/abs/2404.12318" target="_blank" rel="noopener noreferrer">Reuse Your Rewards: Reward Model Transfer for Zero-Shot Cross-Lingual Alignment</a></div>
+      
+      <div>
+        
+        
+        
+          
+          
+          
+          
+          
+            
+              <b>Zhaofeng Wu</b>,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Ananth Balashankar,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Yoon Kim,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Jacob Eisenstein, and
+            
+          
+        
+          
+          
+          
+          
+          
+            Ahmad Beirami
+          
+        
+      </div>
+      
+        <div>In <i>Empirical Methods in Natural Language Processing</i> (EMNLP), 2024.</div>
+      
+      
+      
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      <div><a href="https://arxiv.org/abs/2402.13956" target="_blank" rel="noopener noreferrer">Can You Learn Semantics Through Next-Word Prediction? The Case of Entailment</a></div>
+      
+      <div>
+        
+        
+        
+          
+          
+          
+          
+          
+            
+              William Merrill*,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              <b>Zhaofeng Wu*</b>,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Norihito Naka,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Yoon Kim, and
+            
+          
+        
+          
+          
+          
+          
+          
+            Tal Linzen
+          
+        
+      </div>
+      
+        <div>In <i>Findings of the Annual Meeting of the Association for Computational Linguistics</i> (ACL Findings), 2024.</div>
+      
+      
+      
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      <div><a href="https://arxiv.org/abs/2307.02477" target="_blank" rel="noopener noreferrer">Reasoning or Reciting? Exploring the Capabilities and Limitations of Language Models Through Counterfactual Tasks</a></div>
+      
+      <div>
+        
+        
+        
+          
+          
+          
+          
+          
+            
+              <b>Zhaofeng Wu</b>,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Linlu Qiu,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Alexis Ross,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Ekin Akyürek,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Boyuan Chen,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Bailin Wang,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Najoung Kim,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Jacob Andreas, and
+            
+          
+        
+          
+          
+          
+          
+          
+            Yoon Kim
+          
+        
+      </div>
+      
+        <div>In <i>North American Chapter of the Association for Computational Linguistics</i> (NAACL), 2024.</div>
+      
+      
+        <span>[<a href="/slides/wu2023reasoning.pdf" target="_blank" rel="noopener noreferrer">slides</a>]</span>
+      
+      
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      <div><a href="https://arxiv.org/abs/2402.07204" target="_blank" rel="noopener noreferrer">ItiNera: Integrating Spatial Optimization with Large Language Models for Open-domain Urban Itinerary Planning</a></div>
+      
+      <div>
+        
+        
+        
+          
+          
+          
+          
+          
+            
+              Yihong Tang,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Zhaokai Wang,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Ao Qu,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Yihao Yan,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              <b>Zhaofeng Wu</b>,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Dingyi Zhuang,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Jushi Kai,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Kebing Hou,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Xiaotong Guo,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Jinhua Zhao,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Zhan Zhao, and
+            
+          
+        
+          
+          
+          
+          
+          
+            Wei Ma
+          
+        
+      </div>
+      
+        <div>In <i>Empirical Methods in Natural Language Processing</i> (EMNLP)<i>: Industry Track</i>, 2024.</div>
+      
+      
+      
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      <div><a href="https://arxiv.org/abs/2410.16162" target="_blank" rel="noopener noreferrer">Sparkle: Mastering Basic Spatial Capabilities in Vision Language Models Elicits Generalization to Composite Spatial Reasoning</a></div>
+      
+      <div>
+        
+        
+        
+          
+          
+          
+          
+          
+            
+              Yihong Tang,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Ao Qu,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Zhaokai Wang,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Dingyi Zhuang,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              <b>Zhaofeng Wu</b>,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Wei Ma,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Shenhao Wang,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Yunhan Zheng,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Zhan Zhao, and
+            
+          
+        
+          
+          
+          
+          
+          
+            Jinhua Zhao
+          
+        
+      </div>
+      
+        <div>Unpublished manuscript, 2024.</div>
+      
+      
+      
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      <div><a href="https://arxiv.org/abs/2210.07468" target="_blank" rel="noopener noreferrer">Transparency Helps Reveal When Language Models Learn Meaning</a></div>
+      
+      <div>
+        
+        
+        
+          
+          
+          
+          
+          
+            
+              <b>Zhaofeng Wu</b>,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              William Merrill,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Hao Peng,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Iz Beltagy, and
+            
+          
+        
+          
+          
+          
+          
+          
+            Noah A. Smith
+          
+        
+      </div>
+      
+        <div>In <i>Transactions of the Association for Computational Linguistics</i> (TACL), 2023.</div>
+      
+      
+        <span>[<a href="/slides/wu2022transparency.pdf" target="_blank" rel="noopener noreferrer">slides</a>]</span>
+      
+      
+        <span>[<a href="/posters/wu2022transparency.pdf" target="_blank" rel="noopener noreferrer">poster</a>]</span>
+      
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      <div><a href="https://arxiv.org/abs/2304.14399" target="_blank" rel="noopener noreferrer">We're Afraid Language Models Aren't Modeling Ambiguity</a></div>
+      
+      <div>
+        
+        
+        
+          
+          
+          
+          
+          
+            
+              Alisa Liu,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              <b>Zhaofeng Wu</b>,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Julian Michael,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Alane Suhr,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Peter West,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Alexander Koller,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Swabha Swayamdipta,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Noah A. Smith, and
+            
+          
+        
+          
+          
+          
+          
+          
+            Yejin Choi
+          
+        
+      </div>
+      
+        <div>In <i>Empirical Methods in Natural Language Processing</i> (EMNLP), 2023.</div>
+      
+      
+      
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      <div><a href="https://arxiv.org/abs/2210.10258" target="_blank" rel="noopener noreferrer">Continued Pretraining for Better Zero- and Few-Shot Promptability</a></div>
+      
+      <div>
+        
+        
+        
+          
+          
+          
+          
+          
+            
+              <b>Zhaofeng Wu</b>,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Robert L. Logan IV,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Pete Walsh,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Akshita Bhagia,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Dirk Groeneveld,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Sameer Singh, and
+            
+          
+        
+          
+          
+          
+          
+          
+            Iz Beltagy
+          
+        
+      </div>
+      
+        <div>In <i>Empirical Methods in Natural Language Processing</i> (EMNLP), 2022.</div>
+      
+      
+      
+        <span>[<a href="/posters/wu2022continued.pdf" target="_blank" rel="noopener noreferrer">poster</a>]</span>
+      
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      <div><a href="https://arxiv.org/abs/2210.08431" target="_blank" rel="noopener noreferrer">Modeling Context With Linear Attention for Scalable Document-Level Translation</a></div>
+      
+      <div>
+        
+        
+        
+          
+          
+          
+          
+          
+            
+              <b>Zhaofeng Wu</b>,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Hao Peng,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Nikolaos Pappas, and
+            
+          
+        
+          
+          
+          
+          
+          
+            Noah A. Smith
+          
+        
+      </div>
+      
+        <div>In <i>Findings of the Conference on Empirical Methods in Natural Language Processing</i> (EMNLP Findings), 2022.</div>
+      
+      
+      
+        <span>[<a href="/posters/wu2022modeling.pdf" target="_blank" rel="noopener noreferrer">poster</a>]</span>
+      
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      <div><a href="https://arxiv.org/abs/2110.02488" target="_blank" rel="noopener noreferrer">ABC: Attention with Bounded-memory Control</a></div>
+      
+      <div>
+        
+        
+        
+          
+          
+          
+          
+          
+            
+              Hao Peng,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Jungo Kasai,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Nikolaos Pappas,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Dani Yogatama,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              <b>Zhaofeng Wu</b>,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Lingpeng Kong,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Roy Schwartz, and
+            
+          
+        
+          
+          
+          
+          
+          
+            Noah A. Smith
+          
+        
+      </div>
+      
+        <div>In <i>Annual Meeting of the Association for Computational Linguistics</i> (ACL), 2022.</div>
+      
+      
+      
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      <div><a href="https://arxiv.org/abs/2201.00490" target="_blank" rel="noopener noreferrer">Learning with Latent Structures in Natural Language Processing: A Survey</a></div>
+      
+      <div>
+        
+        
+        
+          
+          
+          
+          
+          
+            <b>Zhaofeng Wu</b>
+          
+        
+      </div>
+      
+        <div>Unpublished manuscript, 2022.</div>
+      
+      
+      
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      <div><a href="https://arxiv.org/abs/2012.05395" target="_blank" rel="noopener noreferrer">Infusing Finetuning with Semantic Dependencies</a></div>
+      
+      <div>
+        
+        
+        
+          
+          
+          
+          
+          
+            
+              <b>Zhaofeng Wu</b>,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Hao Peng, and
+            
+          
+        
+          
+          
+          
+          
+          
+            Noah A. Smith
+          
+        
+      </div>
+      
+        <div>In <i>Transactions of the Association for Computational Linguistics</i> (TACL), 2021.</div>
+      
+      
+        <span>[<a href="/slides/wu2021infusing.pdf" target="_blank" rel="noopener noreferrer">slides</a>]</span>
+      
+      
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      <div><a href="https://arxiv.org/abs/2009.09363" target="_blank" rel="noopener noreferrer">Understanding Mention Detector-Linker Interaction in Neural Coreference Resolution</a></div>
+      
+      <div>
+        
+        
+        
+          
+          
+          
+          
+          
+            
+              <b>Zhaofeng Wu</b> and
+            
+          
+        
+          
+          
+          
+          
+          
+            Matt Gardner
+          
+        
+      </div>
+      
+        <div>In <i>Workshop on Computational Models of Reference, Anaphora and Coreference @ EMNLP</i>, 2021.</div>
+      
+      
+        <span>[<a href="/slides/wu2021understanding.pdf" target="_blank" rel="noopener noreferrer">slides</a>]</span>
+      
+      
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      <div><a href="https://arxiv.org/abs/2005.10627" target="_blank" rel="noopener noreferrer">Dynamic Sparsity Neural Networks for Automatic Speech Recognition</a></div>
+      
+      <div>
+        
+        
+        
+          
+          
+          
+          
+          
+            
+              <b>Zhaofeng Wu</b>,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Ding Zhao,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Qiao Liang,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Jiahui Yu,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Anmol Gulati, and
+            
+          
+        
+          
+          
+          
+          
+          
+            Ruoming Pang
+          
+        
+      </div>
+      
+        <div>In <i>IEEE International Conference on Acoustics, Speech and Signal Processing</i> (ICASSP), 2021.</div>
+      
+      
+        <span>[<a href="/slides/wu2021dynamic.pdf" target="_blank" rel="noopener noreferrer">slides</a>]</span>
+      
+      
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+    <li>
+      <div><a href="https://www.aclweb.org/anthology/W19-5044" target="_blank" rel="noopener noreferrer">WTMED at MEDIQA 2019: A Hybrid Approach to Biomedical Natural Language Inference</a></div>
+      
+      <div>
+        
+        
+        
+          
+          
+          
+          
+          
+            
+              <b>Zhaofeng Wu</b>,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Yan Song,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Sicong Huang,
+            
+          
+        
+          
+          
+          
+          
+          
+            
+              Yuanhe Tian, and
+            
+          
+        
+          
+          
+          
+          
+          
+            Fei Xia
+          
+        
+      </div>
+      
+        <div>In <i>BioNLP Workshop and Shared Task @ ACL</i>, 2019.</div>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<h1 id="talks">Talks</h1>
+
+<p>Data-General Computation in Language Models<br />
+University of Chicago, UIUC<br />
+April 2024</p>
+
+<p>The Semantic Hub Hypothesis: Language Models Share Semantic Representations Across Languages and Modalities<br />
+USC<br />
+November 2024</p>
+
+<p>Can You Learn Semantics Through Next-Word Prediction? The Case of Entailment<br />
+Brown<br />
+April 2024</p>
+
+<p>Generalization in the LLM Era<br />
+University of Utah, <a href="https://yumeng5.github.io/teaching/2024-spring-cs6501" target="_blank&quot;,:rel=&quot;noopener noreferrer">University of Virginia CS 6501</a><br />
+March 2024</p>
+
+<p><a href="/talks/reality_check.pdf" target="_blank&quot;,:rel=&quot;noopener noreferrer">Language Models: A Reality Check</a><br />
+UIUC CS 598, NYU, Cornell, Princeton, Google<br />
+September – November 2023</p>
+
+<p><a href="/talks/gnn.pdf" target="_blank&quot;,:rel=&quot;noopener noreferrer">Graph Neural Networks for NLP</a><br />
+<a href="https://courses.cs.washington.edu/courses/cse481n/21sp/" target="_blank&quot;,:rel=&quot;noopener noreferrer">UW CSE 481N</a><br />
+May 2021</p>
+
+<h1 id="awards">Awards</h1>
+
+<p><a href="https://en.wikipedia.org/wiki/You_(Time_Person_of_the_Year)" target="_blank&quot;,:rel=&quot;noopener noreferrer">TIME Magazine’s Person of the Year in 2006</a><br />
+<a href="https://web.archive.org/web/20090208160013/https://news.cctv.com/china/20090205/114029.shtml" target="_blank&quot;,:rel=&quot;noopener noreferrer">2008 感动中国年度人物特别奖</a></p>
+
+    </div>
+
+  </body>
+</html>
