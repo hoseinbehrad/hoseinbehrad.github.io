@@ -2683,9 +2683,9 @@
         pointer-events: none;
         transition: transform var(--dur) var(--ease), opacity var(--dur) var(--ease);
         position: absolute;
-        top: 50%;
+        top: 42%;
         left: 50%;
-        transform: translate(-50%, -50%)
+        transform: translate(-50%, -50%);
     }
 
     .nameplate--academic {
@@ -2703,17 +2703,20 @@
         color: var(--ivory);
         letter-spacing: .02em;
         font-family: Playfair Display, Georgia, serif;
-        font-size: clamp(2.2rem, 4vw, 3.5rem);
         font-weight: 700;
         line-height: 1.1;
-        display: block
+        display: block;
     }
 
     .nameplate__first {
         color: var(--ivory-2);
-        font-size: clamp(1.6rem, 3vw, 2.6rem);
+        font-size: clamp(2rem, 3.5vw, 3rem);
         font-style: italic;
-        font-weight: 400
+        font-weight: 400;
+    }
+
+    .nameplate__last {
+        font-size: clamp(3rem, 6vw, 5.5rem);
     }
 
     .nameplate__divider {
@@ -2750,20 +2753,22 @@
 
     .panel--academic {
         background: var(--navy-2);
+        flex: 0.95;
         justify-content: flex-end
     }
 
     .panel--prof {
         background: var(--navy);
+        flex: 1.05;
         justify-content: flex-start
     }
 
     .panel--expand {
-        flex: 1.55
+        flex: 1.75
     }
 
     .panel--recede {
-        flex: .45
+        flex: .25
     }
 
     .panel--academic:before {
@@ -2800,7 +2805,7 @@
         transition: transform var(--dur) var(--ease), opacity var(--dur) var(--ease);
         flex-direction: column;
         gap: 12px;
-        padding: 48px;
+        padding: 48px 90px;
         display: flex;
         position: relative
     }
@@ -2860,7 +2865,7 @@
         color: var(--ivory);
         letter-spacing: .01em;
         font-family: Playfair Display, Georgia, serif;
-        font-size: clamp(1.8rem, 3vw, 2.8rem);
+        font-size: clamp(2.3rem, 4vw, 3.8rem);
         font-weight: 700;
         line-height: 1.1
     }
@@ -2906,7 +2911,7 @@
 
     .panel__bg-text {
         letter-spacing: .05em;
-        color: #f0ebe108;
+        color: #f0ebe114;
         white-space: nowrap;
         pointer-events: none;
         transition: color var(--dur) var(--ease), opacity var(--dur) var(--ease);
@@ -2920,11 +2925,13 @@
     }
 
     .panel--academic .panel__bg-text {
-        right: 0
+        right: 50%;
+        transform: translate(50%, -50%);
     }
 
     .panel--prof .panel__bg-text {
-        left: 0
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .panel--academic:hover .panel__bg-text,
