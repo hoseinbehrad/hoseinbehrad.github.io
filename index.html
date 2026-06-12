@@ -2700,7 +2700,7 @@
         pointer-events: none;
         transition: opacity var(--dur) var(--ease);
         position: absolute;
-        top: 8%;
+        top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -2725,7 +2725,7 @@
 
     .nameplate__first {
         color: var(--ivory-2);
-        font-size: clamp(2rem, 3.5vw, 3rem);
+        font-size: clamp(3rem, 6vw, 5.5rem);
         font-style: italic;
         font-weight: 400;
     }
@@ -2744,14 +2744,7 @@
     }
 
     .nameplate__prompt {
-        color: var(--ivory-2);
-        letter-spacing: .2em;
-        text-transform: uppercase;
-        opacity: .6;
-        margin-top: 10px;
-        font-family: DM Mono, monospace;
-        font-size: .68rem;
-        font-weight: 300
+        display: none;
     }
 
     .panel {
@@ -2768,14 +2761,14 @@
 
     .panel--academic {
         background: var(--navy-2);
-        flex: 1;
-        justify-content: flex-end
+        flex: 1.25;
+        justify-content: center
     }
 
     .panel--prof {
         background: var(--navy);
         flex: 1;
-        justify-content: flex-start
+        justify-content: center
     }
 
     .panel--expand {
@@ -2932,7 +2925,7 @@
         transition: color var(--dur) var(--ease), opacity var(--dur) var(--ease);
         z-index: 1;
         font-family: Playfair Display, Georgia, serif;
-        font-size: clamp(5rem, 12vw, 10rem);
+        font-size: clamp(4rem, 10vw, 8rem);
         font-weight: 700;
         position: absolute;
         top: 50%;
