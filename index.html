@@ -98,6 +98,23 @@
     }
 
     button,
+
+    header {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .academic-section, .professional-section {
+        width: 50%;
+        float: left;
+        box-sizing: border-box;
+    }
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
     input,
     optgroup,
     select,
@@ -2681,21 +2698,19 @@
         z-index: 20;
         text-align: center;
         pointer-events: none;
-        transition: transform var(--dur) var(--ease), opacity var(--dur) var(--ease);
+        transition: opacity var(--dur) var(--ease);
         position: absolute;
-        top: 42%;
+        top: 8%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
     .nameplate--academic {
         opacity: .6;
-        transform: translate(calc(-50% - 60px), -50%)
     }
 
     .nameplate--prof {
         opacity: .6;
-        transform: translate(calc(60px - 50%), -50%)
     }
 
     .nameplate__first,
@@ -2753,13 +2768,13 @@
 
     .panel--academic {
         background: var(--navy-2);
-        flex: 0.95;
+        flex: 1;
         justify-content: flex-end
     }
 
     .panel--prof {
         background: var(--navy);
-        flex: 1.05;
+        flex: 1;
         justify-content: flex-start
     }
 
