@@ -212,7 +212,10 @@
             background-image: url('assets/images/hb.png?v=cd44c643');
             background-position: right center;
             background-repeat: no-repeat;
-            background-size: cover;
+            /* background-size: cover; */
+            background-size: 92%;
+            background-position: right center;
+            background-repeat: no-repeat;
             background-color: #000000;
         }
 
@@ -1611,10 +1614,24 @@
             white-space: nowrap;
         }
 
-        #buttons01 {
+        /* #buttons01 {
             gap: 0rem;
             flex-direction: row;
             flex-wrap: wrap;
+        } */
+
+        #buttons01 {
+            width: 500px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 25px;
+            margin: 0 auto;
+            border-top: 1px solid rgba(255,255,255,0.15);
+            border-bottom: 1px solid rgba(255,255,255,0.15);
+            padding-top: 10px;
+            padding-bottom: 10px;
+
         }
 
         #buttons01:not(:first-child) {
@@ -1630,7 +1647,7 @@
             width: auto;
             height: 2rem;
             line-height: 2rem;
-            padding: 0 1rem;
+            padding: 0;
             vertical-align: middle;
             font-family: 'Merriweather', serif;
             font-size: 0.75em;
@@ -3844,6 +3861,10 @@
                 font-size: 0.75em;
             }
 
+            p.style3 {
+                text-align: justify;
+            }
+
             h1.style1,
             h2.style1,
             h3.style1,
@@ -3863,6 +3884,16 @@
             h3.style4,
             p.style4 {
                 font-size: 0.75em;
+            }
+
+            #text27,
+            #text48,
+            #text50{
+                font-size: 0.80em;
+            }
+
+            #text05{
+                font-size: 0.95em;
             }
 
             h1.style5,
@@ -3900,90 +3931,90 @@
             }
         }
 
-         #story-section {
-    max-width: 640px;
-    margin: 0 auto;
-    padding: 4rem 2rem 6rem;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
-    -webkit-font-smoothing: antialiased;
-  }
- 
-  #story-section .story-label {
-    font-family: 'JetBrains Mono', 'Fira Mono', monospace;
-    font-size: 11px;
-    font-weight: 500;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #6b6b6b;
-    margin-bottom: 3rem;
-  }
- 
-  #story-section .timeline {
-    display: flex;
-    flex-direction: column;
-  }
- 
-  #story-section .entry {
-    display: grid;
-    grid-template-columns: 36px 1fr;
-    gap: 0 1.5rem;
-    padding: 2rem 0;
-    border-top: 0.5px solid #e8e8e8;
-  }
- 
-  #story-section .entry:last-child {
-    border-bottom: 0.5px solid #e8e8e8;
-  }
- 
-  #story-section .entry-num {
-    font-family: 'JetBrains Mono', 'Fira Mono', monospace;
-    font-size: 11px;
-    color: #aaaaaa;
-    padding-top: 3px;
-    line-height: 1;
-  }
- 
-  #story-section .entry-title {
-    font-size: 15px;
-    font-weight: 500;
-    margin-bottom: 2px;
-  }
- 
-  #story-section .entry-meta {
-    font-family: 'JetBrains Mono', 'Fira Mono', monospace;
-    font-size: 11px;
-    color: #6b6b6b;
-    margin-bottom: 0.75rem;
-    letter-spacing: 0.02em;
-  }
- 
-  #story-section .entry-desc {
-    font-size: 14px;
-    color: #6b6b6b;
-    line-height: 1.75;
-  }
- 
-  #story-section .entry-desc strong {
-    font-weight: 500;
-    color: inherit;
-  }
- 
-  #story-section .tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    margin-top: 0.75rem;
-  }
- 
-  #story-section .tag {
-    font-family: 'JetBrains Mono', 'Fira Mono', monospace;
-    font-size: 10px;
-    letter-spacing: 0.06em;
-    padding: 3px 8px;
-    border: 0.5px solid #e8e8e8;
-    border-radius: 3px;
-    color: #6b6b6b;
-  }        
+        #story-section {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 4rem 2rem 6rem;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        #story-section .story-label {
+            font-family: 'JetBrains Mono', 'Fira Mono', monospace;
+            font-size: 11px;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #6b6b6b;
+            margin-bottom: 3rem;
+        }
+        
+        #story-section .timeline {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #story-section .entry {
+            display: grid;
+            grid-template-columns: 36px 1fr;
+            gap: 0 1.5rem;
+            padding: 2rem 0;
+            border-top: 0.5px solid #e8e8e8;
+        }
+        
+        #story-section .entry:last-child {
+            border-bottom: 0.5px solid #e8e8e8;
+        }
+        
+        #story-section .entry-num {
+            font-family: 'JetBrains Mono', 'Fira Mono', monospace;
+            font-size: 11px;
+            color: #aaaaaa;
+            padding-top: 3px;
+            line-height: 1;
+        }
+        
+        #story-section .entry-title {
+            font-size: 15px;
+            font-weight: 500;
+            margin-bottom: 2px;
+        }
+        
+        #story-section .entry-meta {
+            font-family: 'JetBrains Mono', 'Fira Mono', monospace;
+            font-size: 11px;
+            color: #6b6b6b;
+            margin-bottom: 0.75rem;
+            letter-spacing: 0.02em;
+        }
+        
+        #story-section .entry-desc {
+            font-size: 14px;
+            color: #6b6b6b;
+            line-height: 1.75;
+        }
+        
+        #story-section .entry-desc strong {
+            font-weight: 500;
+            color: inherit;
+        }
+        
+        #story-section .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 0.75rem;
+        }
+        
+        #story-section .tag {
+            font-family: 'JetBrains Mono', 'Fira Mono', monospace;
+            font-size: 10px;
+            letter-spacing: 0.06em;
+            padding: 3px 8px;
+            border: 0.5px solid #e8e8e8;
+            border-radius: 3px;
+            color: #6b6b6b;
+        }        
     </style>
     <script async src="//www.googletagmanager.com/gtag/js?id=UA-76324003-1"></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-76324003-1', { 'send_page_view': false });</script>
@@ -4034,10 +4065,11 @@
                         <div class="wrapper">
                             <div class="inner">
                                 <p id="text03" class="style3"><span class="p">I'm an engineer turned marketer, with a habit of writing code on the side and researching consumer behavior for fun. My background spans mechanical engineering, business, and IT, which sounds unusual until you realize they're all just different ways of asking the same question: how does this system actually work?</span><span
-                                        class="p">I grew up in Iran, studied engineering and then business, and have spent my career since then at the crossroads of technology and growth. I'm drawn to hard problems, new tools, and the kind of work that forces you to keep learning.</span><span class="p">Right now, I'm focused on getting closer to the consulting world — I want to see firsthand how businesses survive, make mistakes, and occasionally thrive. That's where I think my next big leap in learning happens.</span><span class="p">If you're working on something interesting, I'd love to hear about it..</span></p>
+                                        class="p">I grew up in Iran, studied engineering and then business, and have spent my career since then at the crossroads of technology and growth. I'm drawn to hard problems, new tools, and the kind of work that forces you to keep learning.</span><span class="p">Right now, I'm focused on getting closer to the consulting world, I want to see firsthand how businesses survive, make mistakes, and occasionally thrive. That's where I think my next big leap in learning happens.</span><span class="p">If you're working on something interesting, I'd love to hear about it.</span></p>
                             </div>
                         </div>
                     </div>
+                    
                 </section>
                 <section id="now-section">
                     <div id="container02" class="style1 container default">
@@ -4045,97 +4077,98 @@
                             <div class="inner">
                                 <p id="text05" class="style3">Things running in parallel:</p>
                                 <p id="text27" class="style4"><strong>Infrastructure engineer</strong></p>
-                                <p id="text34" class="style5">managing networks, switches, and GPU servers at Sharif. The layer most people ignore until something breaks.</p>
+                                <p id="text34" class="style3">managing networks, switches, and GPU servers at Sharif. The layer most people ignore until something breaks.</p>
 
                                 <p id="text48" class="style4"><strong>Freelance automation developer</strong></p>
-                                <p id="text49" class="style5">building tools that eliminate repetitive work for businesses. If a human is doing the same thing more than twice, there's probably a better way.</p>
+                                <p id="text49" class="style3">building tools that eliminate repetitive work for businesses. If a human is doing the same thing more than twice, there's probably a better way.</p>
 
 
                                 <p id="text50" class="style4"><strong>Marketing researcher</strong></p>
-                                <p id="text51" class="style5">digging into digital marketing, consumer behavior, and analytics. Trying to bring data and rigor to questions that often get answered by gut feel.</p>
+                                <p id="text51" class="style3">digging into digital marketing, consumer behavior, and analytics. Trying to bring data and rigor to questions that often get answered by gut feel.</p>
                                 
                                 <hr id="divider04">
                             </div>
                         </div>
                     </div>
                 </section>
+
                 <section id="story-section">
  
-  <p class="story-label">Story</p>
- 
-  <div class="timeline">
- 
-    <div class="entry">
-      <div class="entry-num">01</div>
-      <div class="entry-content">
-        <div class="entry-title">Growing up in Iran</div>
-        <div class="entry-meta">Early life</div>
-        <div class="entry-desc">I was a curious kid who liked knowing how things worked, so I was/am comitted to Break-Fix-Learn loop. No single lightbulb moment, just a slow-building obsession with technology and systems that eventually shaped everything else I did.</div>
-      </div>
-    </div>
- 
-    <div class="entry">
-      <div class="entry-num">02</div>
-      <div class="entry-content">
-        <div class="entry-title">Mechanical engineering</div>
-        <div class="entry-meta">Bachelor's degree</div>
-        <div class="entry-desc">My undergraduate degree taught me how to think in systems; that every problem has structure, and if you understand that structure, you can work with it or around it. That mindset has been more useful in business and marketing than I ever expected.</div>
-      </div>
-    </div>
- 
-    <div class="entry">
-      <div class="entry-num">03</div>
-      <div class="entry-content">
-        <div class="entry-title">MBA</div>
-        <div class="entry-meta">Graduate degree</div>
-        <div class="entry-desc">I went back to study business because I wanted to understand the commercial side of technology, how products grow, how markets move, how decisions get made under uncertainty. It reframed everything I thought I knew from engineering.</div>
-        <div class="tags">
-          <span class="tag">Marketing</span>
-          <span class="tag">Strategy</span>
-          <span class="tag">Analytics</span>
-        </div>
-      </div>
-    </div>
- 
-    <div class="entry">
-      <div class="entry-num">04</div>
-      <div class="entry-content">
-        <div class="entry-title">Infrastructure engineer</div>
-        <div class="entry-meta">Current role — Tech guy</div>
-        <div class="entry-desc">Networks, switches, GPU servers. I keep the physical layer running and stay close to where serious technical work actually happens. Working with GPU infrastructure has put me in the middle of some genuinely interesting developments in AI and compute.</div>
-      </div>
-    </div>
- 
-    <div class="entry">
-      <div class="entry-num">05</div>
-      <div class="entry-content">
-        <div class="entry-title">Automation developer</div>
-        <div class="entry-meta">Freelance</div>
-        <div class="entry-desc">I started writing scripts to solve my own problems, then started solving them for others. Now it's a proper freelance practice — building automation tools for businesses that want to spend less time on manual work and more time on things that matter.</div>
-      </div>
-    </div>
- 
-    <div class="entry">
-      <div class="entry-num">06</div>
-      <div class="entry-content">
-        <div class="entry-title">Marketing researcher</div>
-        <div class="entry-meta">Academic — ongoing</div>
-        <div class="entry-desc">My research sits at the intersection of digital marketing, consumer behavior, and data analytics. I'm interested in the questions that look settled on the surface but aren't, <strong>what actually drives decisions online</strong>, and what the data says when you look carefully enough.</div>
-      </div>
-    </div>
- 
-    <div class="entry">
-      <div class="entry-num">07</div>
-      <div class="entry-content">
-        <div class="entry-title">What's next</div>
-        <div class="entry-meta">The plan</div>
-        <div class="entry-desc">I want to get into consulting, not because it sounds good on a CV, but because I want to sit inside real businesses and see firsthand how they survive, where they make mistakes, and what actually makes them grow. That's where my next leap in learning happens. And somewhere along the way, I plan to start something of my own.</div>
-      </div>
-    </div>
- 
-  </div>
- 
-</section>
+                    <p class="story-label">Story</p>
+                    
+                    <div class="timeline">
+                    
+                        <div class="entry">
+                        <div class="entry-num">01</div>
+                        <div class="entry-content">
+                            <div class="entry-title">Growing up in Iran</div>
+                            <div class="entry-meta">Early life</div>
+                            <div class="entry-desc">I was a curious kid who liked knowing how things worked, so I was/am comitted to Break-Fix-Learn loop. No single lightbulb moment, just a slow-building obsession with technology and systems that eventually shaped everything else I did.</div>
+                        </div>
+                        </div>
+                    
+                        <div class="entry">
+                        <div class="entry-num">02</div>
+                        <div class="entry-content">
+                            <div class="entry-title">Mechanical engineering</div>
+                            <div class="entry-meta">Bachelor's degree</div>
+                            <div class="entry-desc">My undergraduate degree taught me how to think in systems; that every problem has structure, and if you understand that structure, you can work with it or around it. That mindset has been more useful in business and marketing than I ever expected.</div>
+                        </div>
+                        </div>
+                    
+                        <div class="entry">
+                        <div class="entry-num">03</div>
+                        <div class="entry-content">
+                            <div class="entry-title">MBA</div>
+                            <div class="entry-meta">Graduate degree</div>
+                            <div class="entry-desc">I went back to study business because I wanted to understand the commercial side of technology, how products grow, how markets move, how decisions get made under uncertainty. It reframed everything I thought I knew from engineering.</div>
+                            <div class="tags">
+                            <span class="tag">Marketing</span>
+                            <span class="tag">Strategy</span>
+                            <span class="tag">Analytics</span>
+                            </div>
+                        </div>
+                        </div>
+                    
+                        <div class="entry">
+                        <div class="entry-num">04</div>
+                        <div class="entry-content">
+                            <div class="entry-title">Infrastructure engineer</div>
+                            <div class="entry-meta">Current role, Tech guy</div>
+                            <div class="entry-desc">Networks, switches, GPU servers. I keep the physical layer running and stay close to where serious technical work actually happens. Working with GPU infrastructure has put me in the middle of some genuinely interesting developments in AI and compute.</div>
+                        </div>
+                        </div>
+                    
+                        <div class="entry">
+                        <div class="entry-num">05</div>
+                        <div class="entry-content">
+                            <div class="entry-title">Automation developer</div>
+                            <div class="entry-meta">Freelance</div>
+                            <div class="entry-desc">I started writing scripts to solve my own problems, then started solving them for others. Now it's a proper freelance practice, building automation tools for businesses that want to spend less time on manual work and more time on things that matter.</div>
+                        </div>
+                        </div>
+                    
+                        <div class="entry">
+                        <div class="entry-num">06</div>
+                        <div class="entry-content">
+                            <div class="entry-title">Marketing researcher</div>
+                            <div class="entry-meta">Academic, ongoing</div>
+                            <div class="entry-desc">My research sits at the intersection of digital marketing, consumer behavior, and data analytics. I'm interested in the questions that look settled on the surface but aren't, <strong>what actually drives decisions online</strong>, and what the data says when you look carefully enough.</div>
+                        </div>
+                        </div>
+                    
+                        <div class="entry">
+                        <div class="entry-num">07</div>
+                        <div class="entry-content">
+                            <div class="entry-title">What's next</div>
+                            <div class="entry-meta">The plan</div>
+                            <div class="entry-desc">I want to get into consulting, not because it sounds good on a CV, but because I want to sit inside real businesses and see firsthand how they survive, where they make mistakes, and what actually makes them grow. That's where my next leap in learning happens. And somewhere along the way, I plan to start something of my own.</div>
+                        </div>
+                        </div>
+                    
+                    </div>
+                    
+                </section>
 
                 
                 <!-- <section id="awards-section">
@@ -4152,7 +4185,7 @@
                             <div class="inner">
 
                                 <p id="text07" class="style3">
-  Always happy to connect — whether you're building something, exploring an idea,
+  Always happy to connect, whether you're building something, exploring an idea,
   or just want to trade notes on growth, technology, or research.
   Reach me at
   <a href="mailto:hosein.behrad@gmail.com">hosein.behrad@gmail.com</a>.
