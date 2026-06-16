@@ -213,7 +213,7 @@
             background-position: right center;
             background-repeat: no-repeat;
             /* background-size: cover; */
-            background-size: 92%;
+            background-size: 80%;
             background-position: right center;
             background-repeat: no-repeat;
             background-color: #000000;
@@ -665,8 +665,8 @@
         }
 
         #container03 {
-            --alignment: left;
-            --flex-alignment: flex-start;
+            --alignment: center;
+            --flex-alignment: center;
             --indent-left: 1;
             --indent-right: 0;
             --margin-left: 0;
@@ -674,7 +674,8 @@
             display: flex;
             width: 100%;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: center;
+            gap: 2rem;
             background-color: transparent;
         }
 
@@ -707,7 +708,9 @@
         #container03.columns>.wrapper>.inner {
             flex-wrap: wrap;
             display: flex;
-            align-items: flex-start;
+            /* align-items: flex-start; */
+            justify-content: space-evenly;
+            align-items: center;
         }
 
         #container03.columns>.wrapper>.inner>* {
@@ -1321,13 +1324,20 @@
             margin-bottom: 1rem !important;
         }
 
+
+        #text34,
+        #text51,
+        #text49{
+            margin-top: 0.25rem !important;
+        }
+
         h1.style3,
         h2.style3,
         h3.style3,
         p.style3 {
             color: #FFFFFF;
             font-family: 'Merriweather', serif;
-            font-size: 0.75em;
+            font-size: 0.85em;
             line-height: 1.875;
             font-weight: 300;
         }
@@ -1448,18 +1458,20 @@
         }
 
         h1.style4,
+        div.style4,
         h2.style4,
         h3.style4,
         p.style4 {
             color: #FFFFFF;
             font-family: 'Merriweather', serif;
-            font-size: 0.75em;
+            font-size: 0.95em;
             line-height: 1.875;
             font-weight: 300;
         }
 
         h1.style4 a:hover,
         h2.style4 a:hover,
+        div.style4,
         h3.style4 a:hover,
         p.style4 a:hover {
             color: #BDBDBD;
@@ -1468,6 +1480,7 @@
         h1.style4 a,
         h2.style4 a,
         h3.style4 a,
+        div.style4,
         p.style4 a {
             text-decoration: none;
         }
@@ -1475,74 +1488,12 @@
         h1.style4 span.p:nth-child(n + 2),
         h2.style4 span.p:nth-child(n + 2),
         h3.style4 span.p:nth-child(n + 2),
+        div.style4 span.p:nth-child(n + 2),
         p.style4 span.p:nth-child(n + 2) {
             margin-top: 1rem;
         }
 
-        h1.style5,
-        h2.style5,
-        h3.style5,
-        p.style5 {
-            color: #FFFFFF;
-            font-family: 'Merriweather', serif;
-            font-size: 0.625em;
-            line-height: 1.875;
-            font-weight: 300;
-        }
-
-        h1.style5 a:hover,
-        h2.style5 a:hover,
-        h3.style5 a:hover,
-        p.style5 a:hover {
-            color: #BDBDBD;
-        }
-
-        h1.style5 a,
-        h2.style5 a,
-        h3.style5 a,
-        p.style5 a {
-            text-decoration: none;
-        }
-
-        h1.style5 span.p:nth-child(n + 2),
-        h2.style5 span.p:nth-child(n + 2),
-        h3.style5 span.p:nth-child(n + 2),
-        p.style5 span.p:nth-child(n + 2) {
-            margin-top: 1rem;
-        }
-
-        h1.style6,
-        h2.style6,
-        h3.style6,
-        p.style6 {
-            color: #FFFFFF;
-            font-family: 'Merriweather', serif;
-            font-size: 0.75em;
-            line-height: 1.875;
-            font-weight: 700;
-        }
-
-        h1.style6 a:hover,
-        h2.style6 a:hover,
-        h3.style6 a:hover,
-        p.style6 a:hover {
-            color: #BDBDBD;
-        }
-
-        h1.style6 a,
-        h2.style6 a,
-        h3.style6 a,
-        p.style6 a {
-            text-decoration: none;
-        }
-
-        h1.style6 span.p:nth-child(n + 2),
-        h2.style6 span.p:nth-child(n + 2),
-        h3.style6 span.p:nth-child(n + 2),
-        p.style6 span.p:nth-child(n + 2) {
-            margin-top: 1rem;
-        }
-
+        
         #text29 {
             color: #FFFFFF;
             font-family: 'Merriweather', serif;
@@ -1668,6 +1619,9 @@
             gap: 0rem;
             flex-direction: row;
             flex-wrap: wrap;
+            display: flex;
+            width: 100%;
+            justify-content: space-around;
         }
 
         .buttons.style2 li a {
@@ -2302,242 +2256,6 @@
             100% {
                 transform: rotate(360deg);
             }
-        }
-
-        #form01 .inner>* {
-            margin: 1rem 0 0 0;
-            max-width: 100%;
-        }
-
-        #form01 .inner> :first-child {
-            margin: 0;
-        }
-
-        #form01 .inner {
-            width: 25rem;
-        }
-
-        #form01 label:first-child {
-            margin: 0.25rem 0 0.75rem 0;
-            font-size: 0.75em;
-            line-height: 1.5;
-            font-family: 'Merriweather', serif;
-            font-weight: 300;
-            color: #FFFFFF;
-        }
-
-        #form01 .field button {
-            background-size: 0.8rem;
-            height: calc(1.6rem - 2px);
-            width: calc(1.6rem - 2px);
-            border-radius: 0rem;
-            background-color: #FFFFFF;
-            transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
-        }
-
-        #form01 .field button:hover {
-            background-color: #BDBDBD;
-        }
-
-        #form01 .field button svg {
-            fill: #000000;
-            transition: fill 0.25s ease;
-        }
-
-        #form01 input[type="text"],
-        #form01 input[type="email"],
-        #form01 input[type="tel"],
-        #form01 input[type="number"],
-        #form01 textarea,
-        #form01 select,
-        #form01 .file,
-        #form01 .date {
-            font-size: 0.75em;
-            font-family: 'Merriweather', serif;
-            font-weight: 300;
-            border-radius: 0rem;
-            color: #FFFFFF;
-            border: solid 1px #FFFFFF;
-        }
-
-        #form01 input[type="text"],
-        #form01 input[type="email"],
-        #form01 input[type="tel"],
-        #form01 input[type="number"],
-        #form01 select,
-        #form01 .file,
-        #form01 .date {
-            height: 2rem;
-            padding: 0 0.7rem;
-            line-height: calc(2rem - 2px);
-        }
-
-        #form01 textarea {
-            padding: 0.7rem;
-            height: 10rem;
-            line-height: 1.5;
-            padding-top: 0.4375rem;
-        }
-
-        #form01 select {
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='504' height='552' preserveAspectRatio='none' viewBox='0 0 504 552'%3E%3Cpath d='M483.9,210.9L252,442.9L20.1,210.9l67.9-67.9L252,307.1l164.1-164.1L483.9,210.9z' fill='%23FFFFFF' /%3E%3C/svg%3E");
-            background-position: calc(100% - 0.7rem) center;
-            padding-right: 2.25rem;
-        }
-
-        #form01 input[type="checkbox"]+label:before {
-            border-radius: 0rem;
-            color: #FFFFFF;
-            border: solid 1px #FFFFFF;
-            background-size: 0.85rem;
-            height: 1.5rem;
-            width: 1.5rem;
-            margin-right: 0.875rem;
-        }
-
-        #form01 input[type="checkbox"]:checked+label:before {
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='648' height='552' preserveAspectRatio='none' viewBox='0 0 648 552'%3E%3Cpath d='M225.3,517.7L2.1,293.1l68.1-67.7L226,382.3L578.1,35.6l67.4,68.4L225.3,517.7z' fill='%23FFFFFF' /%3E%3C/svg%3E");
-        }
-
-        #form01 .number>input[type="number"] {
-            padding-left: 2.1rem;
-            padding-right: 2.1rem;
-        }
-
-        #form01 .number>button.decrement {
-            bottom: calc(0.2rem + 1px);
-            left: calc(0.2rem + 1px);
-        }
-
-        #form01 .number>button.increment {
-            bottom: calc(0.2rem + 1px);
-            right: calc(0.2rem + 1px);
-        }
-
-        #form01 .file:before {
-            width: calc(100% - 2.7rem);
-            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M27.4,4.5c-0.4-0.4-0.8-0.7-1.5-0.9c-0.6-0.3-1.2-0.4-1.7-0.4H7.1c-0.5,0-0.9,0.2-1.3,0.5S5.3,4.5,5.3,5.1v30.7 c0,0.5,0.2,0.9,0.5,1.3c0.4,0.4,0.8,0.5,1.3,0.5h25.8c0.5,0,0.9-0.2,1.3-0.5c0.4-0.4,0.5-0.8,0.5-1.3V13.7c0-0.5-0.1-1.1-0.4-1.7 c-0.3-0.6-0.6-1.1-0.9-1.5L27.4,4.5z M25.7,6.2l6,6c0.2,0.2,0.3,0.4,0.4,0.8h-7.2V5.8C25.3,5.9,25.5,6.1,25.7,6.2z M7.7,35.2V5.7 h14.7v8c0,0.5,0.2,0.9,0.5,1.3c0.4,0.4,0.8,0.5,1.3,0.5h8v19.7H7.7z' style='opacity: 0.375' fill='%23FFFFFF' /%3E%3C/svg%3E");
-            background-size: 0.75rem;
-            background-position: left;
-            padding-left: 1.05rem;
-        }
-
-        #form01 .file>button {
-            bottom: 0.2rem;
-            right: 0.2rem;
-        }
-
-        #form01 .date:before {
-            width: calc(100% - 2.7rem);
-        }
-
-        #form01 .date>button {
-            bottom: 0.2rem;
-            right: 0.2rem;
-        }
-
-        #form01 input[type="checkbox"]+label,
-        #form01 p {
-            font-size: 0.75em;
-            line-height: 1.5;
-            font-family: 'Merriweather', serif;
-            font-weight: 100;
-            color: #FFFFFF;
-        }
-
-        #form01 .actions button {
-            display: inline-block;
-            width: auto;
-            height: 2rem;
-            line-height: 2rem;
-            padding: 0 1rem;
-            vertical-align: middle;
-            font-family: 'Merriweather', serif;
-            font-size: 0.75em;
-            font-weight: 700;
-            border-radius: 0rem;
-            direction: var(--site-language-direction);
-            overflow: hidden;
-            text-overflow: ellipsis;
-            background-color: #FFFFFF;
-            color: #000000;
-            transition: color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
-            position: relative;
-        }
-
-        #form01 .actions button:hover {
-            background-color: #BDBDBD;
-        }
-
-        #form01 .inner> :first-child>label:first-child {
-            margin-top: 0;
-        }
-
-        #form01 .actions button:before {
-            animation: button-spinner 1s infinite linear;
-            background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iOTZweCIgaGVpZ2h0PSI5NnB4IiB2aWV3Qm94PSIwIDAgOTYgOTYiIHpvb21BbmRQYW49ImRpc2FibGUiPjxzdHlsZT5jaXJjbGUge2ZpbGw6IHRyYW5zcGFyZW50OyBzdHJva2U6ICMwMDAwMDA7IHN0cm9rZS13aWR0aDogMnB4OyB9PC9zdHlsZT48ZGVmcz48Y2xpcFBhdGggaWQ9ImNvcm5lciI+PHBvbHlnb24gcG9pbnRzPSIwLDAgNDgsMCA0OCw0OCA5Niw0OCA5Niw5NiAwLDk2IiAvPjwvY2xpcFBhdGg+PC9kZWZzPjxnIGNsaXAtcGF0aD0idXJsKCNjb3JuZXIpIj48Y2lyY2xlIGN4PSI0OCIgY3k9IjQ4IiByPSIzMiIvPjwvZz48L3N2Zz4=');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: 1.5rem;
-            content: '';
-            display: block;
-            height: 1.5rem;
-            left: 50%;
-            margin: -0.75rem 0 0 -0.75rem;
-            opacity: 0;
-            pointer-events: none;
-            position: absolute;
-            top: 50%;
-            transition: opacity 0.25s ease;
-            transition-delay: 0s;
-            width: 1.5rem;
-        }
-
-        #form01 .actions button.waiting {
-            color: transparent;
-        }
-
-        #form01 .actions button.waiting svg {
-            fill: transparent;
-        }
-
-        #form01 .actions button.waiting:before {
-            opacity: 1.0;
-            transition-delay: 0.125s;
-        }
-
-        #form01 ::-webkit-input-placeholder {
-            color: #FFFFFF;
-            opacity: 0.55;
-        }
-
-        #form01 :-moz-placeholder {
-            color: #FFFFFF;
-            opacity: 0.55;
-        }
-
-        #form01 ::-moz-placeholder {
-            color: #FFFFFF;
-            opacity: 0.55;
-        }
-
-        #form01 :-ms-input-placeholder {
-            color: #FFFFFF;
-            opacity: 0.55;
-        }
-
-        #form01 .file[data-filename=""]:before {
-            color: #FFFFFF;
-            opacity: 0.55;
-        }
-
-        #form01 .date[data-value=""]:before {
-            color: #FFFFFF;
-            opacity: 0.55;
-        }
-
-        #form01 input[name="post"] {
-            display: none;
         }
 
         .icons {
@@ -3324,7 +3042,7 @@
             p.style3 {
                 letter-spacing: 0rem;
                 width: 100%;
-                font-size: 0.75em;
+                /* font-size: 0.75em; */
                 line-height: 1.875;
             }
 
@@ -3379,32 +3097,15 @@
             h1.style4,
             h2.style4,
             h3.style4,
+            div.style4,
             p.style4 {
                 letter-spacing: 0rem;
                 width: 100%;
-                font-size: 0.75em;
+                /* font-size: 0.85em; */
                 line-height: 1.875;
             }
 
-            h1.style5,
-            h2.style5,
-            h3.style5,
-            p.style5 {
-                letter-spacing: 0rem;
-                width: 100%;
-                font-size: 0.625em;
-                line-height: 1.875;
-            }
 
-            h1.style6,
-            h2.style6,
-            h3.style6,
-            p.style6 {
-                letter-spacing: 0rem;
-                width: 100%;
-                font-size: 0.75em;
-                line-height: 1.875;
-            }
 
             #text29 {
                 letter-spacing: 0rem;
@@ -3451,7 +3152,7 @@
 
             .buttons.style2 li a {
                 letter-spacing: 0rem;
-                font-size: 0.75em;
+                font-size: 1em;
             }
 
             #divider07:not(:first-child) {
@@ -3706,41 +3407,6 @@
                 width: 17.5rem;
             }
 
-            #form01 label:first-child {
-                font-size: 0.75em;
-                line-height: 1.5;
-                letter-spacing: 0rem;
-            }
-
-            #form01 input[type="text"],
-            #form01 input[type="email"],
-            #form01 input[type="tel"],
-            #form01 input[type="number"],
-            #form01 textarea,
-            #form01 select,
-            #form01 .file,
-            #form01 .date {
-                font-size: 0.75em;
-                letter-spacing: 0rem;
-            }
-
-            #form01 textarea {
-                line-height: 1.5;
-                padding-top: 0.4375rem;
-            }
-
-            #form01 input[type="checkbox"]+label,
-            #form01 p {
-                font-size: 0.75em;
-                line-height: 1.5;
-                letter-spacing: 0rem;
-            }
-
-            #form01 .actions button {
-                letter-spacing: 0rem;
-                font-size: 0.75em;
-            }
-
             #icons02 {
                 font-size: 1.125em;
                 gap: 0.75rem;
@@ -3784,10 +3450,6 @@
                 --spacing: 0rem;
             }
 
-            #form01 .actions button {
-                max-width: 32rem;
-                width: 100%;
-            }
         }
 
         @media (max-width: 360px) {
@@ -3854,12 +3516,12 @@
                 --spacing: 0rem;
             }
 
-            h1.style3,
+            /* h1.style3,
             h2.style3,
             h3.style3,
             p.style3 {
                 font-size: 0.75em;
-            }
+            } */
 
             p.style3 {
                 text-align: justify;
@@ -3879,36 +3541,12 @@
                 font-size: 1em;
             }
 
-            h1.style4,
-            h2.style4,
-            h3.style4,
-            p.style4 {
-                font-size: 0.75em;
-            }
-
-            #text27,
-            #text48,
-            #text50{
-                font-size: 0.80em;
-            }
 
             #text05{
                 font-size: 0.95em;
             }
 
-            h1.style5,
-            h2.style5,
-            h3.style5,
-            p.style5 {
-                font-size: 0.625em;
-            }
 
-            h1.style6,
-            h2.style6,
-            h3.style6,
-            p.style6 {
-                font-size: 0.75em;
-            }
 
             #text29 {
                 font-size: 0.75em;
@@ -3931,90 +3569,109 @@
             }
         }
 
-        #story-section {
+        #mylifestory-section {
             max-width: 640px;
             margin: 0 auto;
-            padding: 4rem 2rem 6rem;
+            /* padding: 4rem 2rem 6rem; */
             font-family: 'Inter', system-ui, -apple-system, sans-serif;
             -webkit-font-smoothing: antialiased;
         }
         
-        #story-section .story-label {
+        #mylifestory-section .story-label {
             font-family: 'JetBrains Mono', 'Fira Mono', monospace;
-            font-size: 11px;
+            font-size: 2em;
             font-weight: 500;
             letter-spacing: 0.12em;
+            /* padding:0.25rem; */
             text-transform: uppercase;
             color: #6b6b6b;
-            margin-bottom: 3rem;
+            margin-bottom: 1rem;
+            /* margin-top: 3rem; */
+            text-align: center;
+            /* margin: 0; */
         }
         
-        #story-section .timeline {
+        #mylifestory-section .timeline {
             display: flex;
             flex-direction: column;
         }
         
-        #story-section .entry {
-            display: grid;
+        #mylifestory-section .entry {
+            display:grid;
             grid-template-columns: 36px 1fr;
-            gap: 0 1.5rem;
-            padding: 2rem 0;
-            border-top: 0.5px solid #e8e8e8;
+            gap: 0 0.6rem;
+            padding: 2rem 0rem;
+            padding-right: 1rem;
+            border-top: 0.2px solid #e8e8e8;
+            border-radius: 500px;
+            text-align: justify;
         }
         
-        #story-section .entry:last-child {
+        /* #mylifestory-section .entry:last-child {
             border-bottom: 0.5px solid #e8e8e8;
-        }
+            border-width: ;
+        } */
         
-        #story-section .entry-num {
+        #mylifestory-section .entry-num {
             font-family: 'JetBrains Mono', 'Fira Mono', monospace;
-            font-size: 11px;
+            font-size: 1em;
             color: #aaaaaa;
-            padding-top: 3px;
-            line-height: 1;
+            padding-top: 6px;
+            /* padding-right: 4px; */
+            /* line-height: 1; */
         }
         
-        #story-section .entry-title {
-            font-size: 15px;
-            font-weight: 500;
+        #mylifestory-section .entry-title {
             margin-bottom: 2px;
+            color: #FFFFFF;
+            font-family: 'Merriweather', serif;
+            font-size: 0.95em;
+            line-height: 1.875;
+            font-weight: 300;
         }
         
-        #story-section .entry-meta {
+        #mylifestory-section .entry-meta {
             font-family: 'JetBrains Mono', 'Fira Mono', monospace;
-            font-size: 11px;
+            font-size: 1em;
             color: #6b6b6b;
             margin-bottom: 0.75rem;
+            margin-top: 0.5rem;
+            /* margin-: 0.5rem; */
             letter-spacing: 0.02em;
         }
         
-        #story-section .entry-desc {
-            font-size: 14px;
-            color: #6b6b6b;
-            line-height: 1.75;
+        #mylifestory-section .entry-desc {
+            color: #FFFFFF;
+            font-family: 'Merriweather', serif;
+            font-size: 0.85em;
+            line-height: 1.875;
+            font-weight: 300;
+            /* justify-content:baseline; */
         }
         
-        #story-section .entry-desc strong {
+        #mylifestory-section .entry-desc strong {
             font-weight: 500;
             color: inherit;
         }
         
-        #story-section .tags {
+        #mylifestory-section .tags {
             display: flex;
             flex-wrap: wrap;
             gap: 6px;
             margin-top: 0.75rem;
         }
         
-        #story-section .tag {
+        #mylifestory-section .tag {
             font-family: 'JetBrains Mono', 'Fira Mono', monospace;
             font-size: 10px;
             letter-spacing: 0.06em;
             padding: 3px 8px;
             border: 0.5px solid #e8e8e8;
-            border-radius: 3px;
-            color: #6b6b6b;
-        }        
+            border-radius: 5px;
+            color: #dbcccc;
+        }
+        
+        
     </style>
     <script async src="//www.googletagmanager.com/gtag/js?id=UA-76324003-1"></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-76324003-1', { 'send_page_view': false });</script>
@@ -4075,16 +3732,17 @@
                     <div id="container02" class="style1 container default">
                         <div class="wrapper">
                             <div class="inner">
-                                <p id="text05" class="style3">Things running in parallel:</p>
-                                <p id="text27" class="style4"><strong>Infrastructure engineer</strong></p>
-                                <p id="text34" class="style3">managing networks, switches, and GPU servers at Sharif. The layer most people ignore until something breaks.</p>
+                                <!-- <p id="text05" class="style3">Things running in parallel:</p> -->
+                                <p id="text27" class="style4"><strong>●  Infrastructure engineer</strong></p>
+                                <p id="text34" class="style3">Managing networks, switches, and GPU servers at Sharif. The layer most people ignore until something breaks.</p>
 
-                                <p id="text48" class="style4"><strong>Freelance automation developer</strong></p>
-                                <p id="text49" class="style3">building tools that eliminate repetitive work for businesses. If a human is doing the same thing more than twice, there's probably a better way.</p>
+                                <p id="text48" class="style4"><strong>●  Freelance automation developer</strong></p>
+                                <p id="text49" class="style3">Building tools that eliminate repetitive work for businesses. If a human is doing the same thing more than twice, there's probably a better way.</p>
 
 
-                                <p id="text50" class="style4"><strong>Marketing researcher</strong></p>
-                                <p id="text51" class="style3">digging into digital marketing, consumer behavior, and analytics. Trying to bring data and rigor to questions that often get answered by gut feel.</p>
+                                <p id="text50" class="style4"><strong>●  Marketing researcher</strong></p>
+                                
+                                <p id="text51" class="style3">Digging into digital marketing, consumer behavior, and analytics. Trying to bring data and rigor to questions that often get answered by gut feel.</p>
                                 
                                 <hr id="divider04">
                             </div>
@@ -4092,12 +3750,9 @@
                     </div>
                 </section>
 
-                <section id="story-section">
- 
+                <section id="mylifestory-section">
                     <p class="story-label">Story</p>
-                    
                     <div class="timeline">
-                    
                         <div class="entry">
                         <div class="entry-num">01</div>
                         <div class="entry-content">
@@ -4152,7 +3807,7 @@
                         <div class="entry-num">06</div>
                         <div class="entry-content">
                             <div class="entry-title">Marketing researcher</div>
-                            <div class="entry-meta">Academic, ongoing</div>
+                            <div class="entry-meta">Academic, always ongoing</div>
                             <div class="entry-desc">My research sits at the intersection of digital marketing, consumer behavior, and data analytics. I'm interested in the questions that look settled on the surface but aren't, <strong>what actually drives decisions online</strong>, and what the data says when you look carefully enough.</div>
                         </div>
                         </div>
