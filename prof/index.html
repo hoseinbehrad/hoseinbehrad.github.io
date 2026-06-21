@@ -201,22 +201,39 @@
             display: block;
             background-attachment: scroll;
             height: var(--background-height);
-            left: auto;
             pointer-events: none;
             position: fixed;
             top: 0;
-            transform: scale(1);
-            width: calc(100vw - 44rem);
-            z-index: 0;
             right: 0;
+            z-index: 0;
+        
             background-image: url('assets/images/hb.png?v=cd44c643');
-            background-position: right center;
-            background-repeat: no-repeat;
-            /* background-size: cover; */
-            background-size: 90%;
-            background-position: right center;
             background-repeat: no-repeat;
             background-color: #000000;
+        
+            /* Desktop / default: sidebar layout */
+            width: calc(100vw - 44rem);
+            background-position: right center;
+        
+            /* Scales with true viewport width, not container width —
+               avoids the runaway zoom 'cover' caused on wide monitors. */
+            background-size: clamp(320px, 32vw, 760px);
+        }
+        
+        /* Tablets: sidebar likely still present but narrower, give image a bit more room */
+        @media (max-width: 1200px) {
+            body:before {
+                background-size: clamp(300px, 40vw, 600px);
+            }
+        }
+        
+        /* Mobile: sidebar is gone, container math would otherwise go negative */
+        @media (max-width: 768px) {
+            body:before {
+                width: 100vw;
+                background-position: center top;
+                background-size: clamp(260px, 65vw, 420px);
+            }
         }
 
         :root {
