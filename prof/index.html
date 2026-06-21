@@ -205,35 +205,46 @@
             position: fixed;
             top: 0;
             right: 0;
+            width: calc(100vw - 44rem);
             z-index: 0;
-        
             background-image: url('assets/images/hb.png?v=cd44c643');
             background-repeat: no-repeat;
             background-color: #000000;
         
-            /* Desktop / default: sidebar layout */
-            width: calc(100vw - 44rem);
+            /* Desktop default */
+            background-size: 80%;
             background-position: right center;
-        
-            /* Scales with true viewport width, not container width —
-               avoids the runaway zoom 'cover' caused on wide monitors. */
-            background-size: clamp(320px, 32vw, 760px);
         }
         
-        /* Tablets: sidebar likely still present but narrower, give image a bit more room */
-        @media (max-width: 1200px) {
+        /* Tablets and smaller */
+        @media (max-width: 1024px) {
             body:before {
-                background-size: clamp(300px, 40vw, 600px);
+                background-size: cover;
+                background-position: right center;
             }
         }
         
-        /* Mobile: sidebar is gone, container math would otherwise go negative */
-        @media (max-width: 768px) {
+        /* Phones */
+        @media (max-width: 600px) {
             body:before {
-                width: 100vw;
-                background-position: center top;
-                background-size: clamp(260px, 65vw, 420px);
+                background-size: cover;
+                background-position: center top; /* tweak so the face isn't cropped */
             }
+
+
+        /* Large desktop monitors */
+        @media (min-width: 1600px) {
+            body:before {
+                background-size: 80%;
+            }
+        }
+        
+        /* Normal desktops */
+        @media (max-width: 1599px) {
+            body:before {
+                background-size: cover;
+            }
+        }
         }
 
         :root {
