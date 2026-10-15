@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Commodity portal monitoring | Hosein Behrad</title>
+<meta name="description" content="Client work: bots that watch a commodity allocation portal, alert clients to new offers in seconds, and attempt purchases without getting banned.">
+<meta property="og:title" content="Commodity portal monitoring | Hosein Behrad">
+<meta property="og:description" content="Client work: bots that watch a commodity allocation portal, alert clients to new offers in seconds, and attempt purchases without getting banned.">
+<meta property="og:image" content="https://hoseinbehrad.ir/prof/work/assets/thumb-commodity.jpg">
+<meta property="og:type" content="article">
+<link rel="canonical" href="https://hoseinbehrad.ir/prof/work/commodity-monitoring/">
+<link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+<link href="https://fonts.googleapis.com/css2?display=swap&family=Merriweather:wght@300;400;700;900&family=JetBrains+Mono:wght@400;500" rel="stylesheet">
+<link rel="stylesheet" href="../work.css">
+</head>
+<body>
+<main class="page">
+<nav class="top" aria-label="Site">
+  <a class="name" href="../../">Hosein Behrad.</a>
+  <a href="../../#work">&larr; All work</a>
+</nav>
+
+<p class="eyebrow">Client work &middot; Automation</p>
+<h1>Commodity portal monitoring and buying</h1>
+<p class="lede">Buyers on a commodity allocation portal lose good offers because they appear and disappear faster than anyone can refresh a page. I built bots that watch the offer board for them, tell them the moment something relevant appears, and, for some clients, try to secure the purchase.</p>
+<dl class="facts"><div><dt>Role</dt><dd>Sole analyst and developer</dd></div><div><dt>Clients</dt><dd>Several, each with its own setup</dd></div><div><dt>Stack</dt><dd>Python, Selenium, pandas, Telegram Bot API</dd></div><div><dt>Code</dt><dd>Private (client work)</dd></div></dl>
+<figure><img src="../assets/commodity-process.png" alt="Process diagram: a watch-and-alert flow, a buying flow, and anti-ban safeguards shared by both" loading="lazy"><figcaption>The two bots and the safeguards they share. Portal and client names removed.</figcaption></figure>
+<h2>The problem</h2>
+<p>Allocation offers are posted on a government-run portal. Relevant ones are scarce and go quickly. Clients were checking by hand, which meant missed offers, wasted hours, and decisions made after the window had already closed.</p>
+<h2>What I built</h2>
+<ul>
+<li><strong>Watch and alert.</strong> A bot signs in, opens the offer board, reads every row into a DataFrame, compares offer IDs with saved history, keeps only the client's target products, and sends one Telegram message per new offer. It repeats every 5 to 10 seconds.</li>
+<li><strong>Buy.</strong> For clients who wanted it, a second bot works through three purchase routes in order and stops with a Telegram confirmation when an allocation is secured.</li>
+<li><strong>Stay under the radar.</strong> The portal blocks aggressive traffic, so both bots use randomized human-like waits, a cap on requests per 10-minute window, and adaptive back-off when a block page appears. I also built an action log to find out which patterns triggered bans, and tuned the bots from that data.</li>
+<li><strong>Recover on its own.</strong> Session expiry, forced re-login and form resubmission pages are detected and handled without a person stepping in.</li>
+</ul>
+<div class="result"><div class="num">5 to 10 s</div><p>between checks of the offer board. Clients see a relevant new offer in their Telegram almost as soon as it is posted, instead of whenever they next remember to look.</p></div>
+<h2>What it shows</h2>
+<p>Most of the work was not the scraping. It was understanding how the portal behaves under load, what a client actually needs to see, and how to keep a tool running for weeks without someone babysitting it.</p>
+<p class="note">Code is private because it was written for clients. Happy to walk through the design in an interview.</p>
+
+<nav class="next" aria-label="More work">
+  <a href="../vehicle-inspection/"><span class="label">&larr; Previous</span><span class="title">Vehicle standards inspection tool</span></a>
+  <a href="../telegram-matcher/" style="text-align:right"><span class="label">Next &rarr;</span><span class="title">Real-time Telegram matcher</span></a>
+</nav>
+</main>
+</body>
+</html>

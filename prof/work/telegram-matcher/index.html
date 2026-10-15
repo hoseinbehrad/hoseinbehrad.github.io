@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Real-time Telegram matcher | Hosein Behrad</title>
+<meta name="description" content="An event-driven Telegram listener that filters posts in large groups and replies to matching sellers in 0.63 s (median) across 1,000+ live messages.">
+<meta property="og:title" content="Real-time Telegram matcher | Hosein Behrad">
+<meta property="og:description" content="An event-driven Telegram listener that filters posts in large groups and replies to matching sellers in 0.63 s (median) across 1,000+ live messages.">
+<meta property="og:image" content="https://hoseinbehrad.ir/prof/work/assets/thumb-telegram.jpg">
+<meta property="og:type" content="article">
+<link rel="canonical" href="https://hoseinbehrad.ir/prof/work/telegram-matcher/">
+<link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+<link href="https://fonts.googleapis.com/css2?display=swap&family=Merriweather:wght@300;400;700;900&family=JetBrains+Mono:wght@400;500" rel="stylesheet">
+<link rel="stylesheet" href="../work.css">
+</head>
+<body>
+<main class="page">
+<nav class="top" aria-label="Site">
+  <a class="name" href="../../">Hosein Behrad.</a>
+  <a href="../../#work">&larr; All work</a>
+</nav>
+
+<p class="eyebrow">Personal tool &middot; Real-time automation</p>
+<h1>Real-time Telegram matcher</h1>
+<p class="lede">In large Telegram groups, the first person to reply gets the deal. I built a listener that reads every new post, decides in milliseconds whether it is worth acting on, and messages the seller before a human could finish reading.</p>
+<dl class="facts"><div><dt>Role</dt><dd>Designer and developer</dd></div><div><dt>Scale</dt><dd>1,000+ live messages</dd></div><div><dt>Stack</dt><dd>Python, Telethon (MTProto), asyncio</dd></div><div><dt>Code</dt><dd>Private</dd></div></dl>
+<figure><img src="../assets/telegram-matcher-process.png" alt="Flowchart: new post, three yes/no checks, then message the seller and log the reply time" loading="lazy"><figcaption>Three checks, then act. Everything else is ignored.</figcaption></figure>
+<h2>How it decides</h2>
+<ul>
+<li><strong>Is it a sale?</strong> The post must contain sale keywords.</li>
+<li><strong>Does it pass my rules?</strong> A blocklist removes posts outside my budget, the wrong meal, the wrong place, swaps and buy requests. The rules are plain lists, so changing what counts as a match takes seconds.</li>
+<li><strong>Is the sender OK?</strong> Blocked users are skipped.</li>
+<li><strong>Act.</strong> The reply is fired as an async task so the listener never waits on the network, then the bot logs how long it took.</li>
+</ul>
+<div class="result"><div class="num">0.63 s</div><p>median from a matching post to a sent reply, across more than 1,000 live messages.</p></div>
+<h2>Why it is fast</h2>
+<p>It listens to events instead of polling, filters with cheap string checks before any network call, and never blocks the event loop. The speed comes from the design, not from hardware.</p>
+
+<nav class="next" aria-label="More work">
+  <a href="../commodity-monitoring/"><span class="label">&larr; Previous</span><span class="title">Commodity portal monitoring</span></a>
+  <a href="../raja-booking/" style="text-align:right"><span class="label">Next &rarr;</span><span class="title">Train ticket booking bot</span></a>
+</nav>
+</main>
+</body>
+</html>

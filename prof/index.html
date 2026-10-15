@@ -3597,6 +3597,139 @@
             }
         }
 
+
+        /* ---------- Work section ---------- */
+        #work-section {
+            max-width: 640px;
+            margin: 0 auto;
+            -webkit-font-smoothing: antialiased;
+        }
+        #work-section .work-label {
+            font-family: 'JetBrains Mono', 'Fira Mono', monospace;
+            font-size: 2em;
+            font-weight: 500;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #6b6b6b;
+            margin: 0 0 1rem;
+            text-align: center;
+        }
+        #work-section .work-intro {
+            color: #FFFFFF;
+            font-family: 'Merriweather', serif;
+            font-size: 0.85em;
+            line-height: 1.875;
+            font-weight: 300;
+            margin: 0 0 2rem;
+        }
+        #work-section .work-group {
+            font-family: 'JetBrains Mono', 'Fira Mono', monospace;
+            font-size: 0.7em;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            color: #ff7a1a;
+            margin: 2.25rem 0 1rem;
+        }
+        #work-section .card {
+            display: block;
+            margin: 0 0 1.75rem;
+            color: #FFFFFF;
+            text-decoration: none;
+            border: 0;
+        }
+        #work-section .card .thumb {
+            display: block;
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #262626;
+            background: #0a0c10;
+            transition: border-color 0.2s ease, transform 0.2s ease;
+        }
+        #work-section a.card:hover .thumb { border-color: #ff7a1a; transform: translateY(-2px); }
+        #work-section .card-title {
+            font-family: 'Merriweather', serif;
+            font-size: 0.95em;
+            line-height: 1.6;
+            font-weight: 400;
+            margin: 0.75rem 0 0.25rem;
+            color: #FFFFFF;
+        }
+        #work-section .card-result {
+            font-family: 'Merriweather', serif;
+            font-size: 0.8em;
+            line-height: 1.75;
+            font-weight: 300;
+            color: #d4d4d4;
+            margin: 0;
+        }
+        #work-section .card-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 0.6rem;
+        }
+        #work-section .tag {
+            font-family: 'JetBrains Mono', 'Fira Mono', monospace;
+            font-size: 10px;
+            letter-spacing: 0.06em;
+            padding: 3px 8px;
+            border: 0.5px solid #e8e8e8;
+            border-radius: 5px;
+            color: #dbcccc;
+        }
+        #work-section .card-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.1rem;
+            margin-top: 0.6rem;
+            font-family: 'JetBrains Mono', 'Fira Mono', monospace;
+            font-size: 11px;
+            letter-spacing: 0.06em;
+        }
+        #work-section .card-links a {
+            color: #FFFFFF;
+            text-decoration: underline;
+            text-decoration-color: #6b6b6b;
+            text-underline-offset: 3px;
+        }
+        #work-section .card-links a:hover { color: #ff7a1a; text-decoration-color: #ff7a1a; }
+        #work-section .card-cta {
+            font-family: 'JetBrains Mono', 'Fira Mono', monospace;
+            font-size: 11px;
+            letter-spacing: 0.06em;
+            color: #a3a3a3;
+            margin-top: 0.6rem;
+        }
+        #work-section a.card:hover .card-cta { color: #ff7a1a; }
+        #work-section .work-foot {
+            font-family: 'Merriweather', serif;
+            font-size: 0.8em;
+            line-height: 1.75;
+            font-weight: 300;
+            color: #d4d4d4;
+            margin: 2.5rem 0 0;
+            padding-top: 1.25rem;
+            border-top: 1px solid #262626;
+        }
+        #work-section .work-foot a { color: #FFFFFF; }
+        #work-section .work-intro,
+        #work-section .work-group,
+        #work-section .card,
+        #work-section .work-foot { text-align: left; }
+        #now-section #text49 a,
+        #now-section #text51 a {
+            color: #FFFFFF;
+            text-decoration: underline;
+            text-decoration-color: #ff7a1a;
+            text-underline-offset: 3px;
+        }
+        #buttons02 li a { padding: 0 0.7rem; }
+        @media (max-width: 480px) {
+            #buttons02 li a { padding: 0 0.45rem; font-size: 0.9em !important; }
+        }
+
         #mylifestory-section {
             max-width: 640px;
             margin: 0 auto;
@@ -3728,6 +3861,9 @@
             <path
                 d="M36.3,10.2c-1,1.3-2.1,2.5-3.4,3.5c0,0.2,0,0.4,0,1c0,1.7-0.2,3.6-0.9,5.3c-0.6,1.7-1.2,3.5-2.4,5.1 c-1.1,1.5-2.3,3.1-3.7,4.3c-1.4,1.2-3.3,2.3-5.3,3c-2.1,0.8-4.2,1.2-6.6,1.2c-3.6,0-7-1-10.2-3c0.4,0,1.1,0.1,1.5,0.1 c3.1,0,5.9-1,8.2-2.9c-1.4,0-2.7-0.4-3.8-1.3c-1.2-1-1.9-2-2.2-3.3c0.4,0.1,1,0.1,1.2,0.1c0.6,0,1.2-0.1,1.7-0.2 c-1.4-0.3-2.7-1.1-3.7-2.3s-1.4-2.6-1.4-4.2v-0.1c1,0.6,2,0.9,3,0.9c-1-0.6-1.5-1.3-2.2-2.4c-0.6-1-0.9-2.1-0.9-3.3s0.3-2.3,1-3.4 c1.5,2.1,3.6,3.6,6,4.9s4.9,2,7.6,2.1c-0.1-0.6-0.1-1.1-0.1-1.4c0-1.8,0.8-3.5,2-4.7c1.2-1.2,2.9-2,4.7-2c2,0,3.6,0.8,4.8,2.1 c1.4-0.3,2.9-0.9,4.2-1.5c-0.4,1.5-1.4,2.7-2.9,3.6C33.8,11.2,35.1,10.9,36.3,10.2L36.3,10.2z" />
         </symbol>
+            <symbol id="icon-github-hb" viewBox="0 0 40 40">
+            <path d="M20 5.2c-8.3 0-15 6.7-15 15 0 6.6 4.3 12.2 10.3 14.2.8.1 1-.3 1-.7v-2.6c-4.2.9-5.1-2-5.1-2-.7-1.7-1.7-2.2-1.7-2.2-1.4-.9.1-.9.1-.9 1.5.1 2.3 1.5 2.3 1.5 1.3 2.3 3.5 1.6 4.4 1.2.1-1 .5-1.6 1-2-3.3-.4-6.8-1.7-6.8-7.4 0-1.6.6-3 1.5-4-.2-.4-.7-1.9.1-4 0 0 1.3-.4 4.1 1.5 1.2-.3 2.5-.5 3.8-.5s2.6.2 3.8.5c2.9-1.9 4.1-1.5 4.1-1.5.8 2.1.3 3.6.1 4 1 1 1.5 2.4 1.5 4 0 5.8-3.5 7-6.8 7.4.5.5 1 1.4 1 2.8v4.1c0 .4.3.9 1 .7 6-2 10.3-7.6 10.3-14.2 0-8.3-6.7-15-15-15z"/>
+        </symbol>
     </svg>
     <div id="wrapper">
         <div id="main">
@@ -3748,6 +3884,7 @@
                                 <ul id="buttons02" class="style2 buttons">
                                     <li><a href="#" class="button n01" role="button">Bio</a></li>
                                     <li><a href="#now" class="button n02" role="button">Now</a></li>
+                                    <li><a href="#work" class="button n02" role="button">Work</a></li>
                                     <li><a href="#mylifestory" class="button n03" role="button">Story</a></li>
                                     <!-- <li><a href="#awards" class="button n04" role="button">Awards</a></li> -->
                                     <!-- <li><a href="#consulting" class="button n05" role="button">Consulting</a></li> -->
@@ -3763,7 +3900,7 @@
                         <div class="wrapper">
                             <div class="inner">
                                 <p id="text03" class="style3"><span class="p">I'm a business and data analyst with an engineering degree and an MBA. I use Python, SQL, and statistics to find where a business is losing time or money, then turn that into something people can act on. Mechanical engineering, business, and IT sound like an odd mix until you realize they all ask the same question: how does this system actually work?</span><span
-                                        class="p">I grew up in Iran, studied engineering and then business, and have worked since then where operations, data, and technology meet: running operations at a manufacturer, analyzing data and automating processes for clients, and planning compute capacity for researchers.</span><span class="p">Right now, I'm focused on getting closer to the consulting world. I want to see firsthand how businesses survive, make mistakes, and occasionally thrive. That's where I think my next big leap in learning happens.</span><span class="p">If you're working on something interesting, I'd love to hear about it.</span></p>
+                                        class="p">I grew up in Iran, studied engineering and then business, and have worked since then where operations, data, and technology meet: running operations at a manufacturer, analyzing data and automating processes for clients, and planning IT capacity for a research university.</span><span class="p">Right now, I'm focused on getting closer to the consulting world. I want to see firsthand how businesses survive, make mistakes, and occasionally thrive. That's where I think my next big leap in learning happens.</span><span class="p">If you're working on something interesting, I'd love to hear about it.</span></p>
                             </div>
                         </div>
                     </div>
@@ -3774,21 +3911,87 @@
                         <div class="wrapper">
                             <div class="inner">
                                 <!-- <p id="text05" class="style3">Things running in parallel:</p> -->
-                                <p id="text27" class="style4"><strong>●  Capacity &amp; process analyst</strong></p>
-                                <p id="text34" class="style3">IT infrastructure at Sharif University of Technology. I measure what researchers need in compute and network, compare it with what exists, then plan and deliver the gap. The layer most people ignore until something breaks.</p>
-
+                                
                                 <p id="text48" class="style4"><strong>●  Business &amp; data analyst, project-based</strong></p>
-                                <p id="text49" class="style3">Data analysis and process automation for clients, one project at a time. If a human is doing the same thing more than twice, there's probably a better way.</p>
+                                <p id="text49" class="style3">Data analysis and process automation for clients, one project at a time. If a human is doing the same thing more than twice, there's probably a better way. <a href="#work">See the work</a></p>
 
 
                                 <p id="text50" class="style4"><strong>●  Marketing researcher</strong></p>
                                 
-                                <p id="text51" class="style3">Bringing data and rigor to questions that often get answered by gut feel. Current work: scoring how well Airbnb listing photos match their descriptions, and what that means for listing performance.</p>
+                                <p id="text51" class="style3">Bringing data and rigor to questions that often get answered by gut feel. One paper accepted at the <em>Journal of Marketing Theory and Practice</em>; another, scoring how well Airbnb listing photos match their descriptions, is in its second round of review at the <em>European Journal of Marketing</em>. <a href="/academic/">Publications</a></p>
                                 
                                 <hr id="divider04">
                             </div>
                         </div>
                     </div>
+                </section>
+
+
+                <section id="work-section">
+                    <p class="work-label">Work</p>
+                    <p class="work-intro">Things I built to take a slow, manual process and make it fast and reliable. Client and commercial code stays private, so those come as case studies. The rest is open source.</p>
+
+                    <p class="work-group">Case studies</p>
+                    <a class="card" href="work/commodity-monitoring/">
+                        <img class="thumb" src="work/assets/thumb-commodity.jpg" alt="" loading="lazy">
+                        <p class="card-title">Commodity portal monitoring</p>
+                        <p class="card-result">Client work. Bots that watch a commodity allocation portal every 5 to 10 seconds, alert clients to new offers on Telegram, and try to secure the purchase without getting banned.</p>
+                        <div class="card-meta"><span class="tag">Python</span><span class="tag">Selenium</span><span class="tag">pandas</span></div>
+                        <p class="card-cta">Read the case study &rarr;</p>
+                    </a>
+                    <a class="card" href="work/telegram-matcher/">
+                        <img class="thumb" src="work/assets/thumb-telegram.jpg" alt="" loading="lazy">
+                        <p class="card-title">Real-time Telegram matcher</p>
+                        <p class="card-result">Reads every post in large groups, decides in milliseconds, and replies to matching sellers in 0.63 s (median) across 1,000+ live messages.</p>
+                        <div class="card-meta"><span class="tag">Python</span><span class="tag">Telethon</span><span class="tag">asyncio</span></div>
+                        <p class="card-cta">Read the case study &rarr;</p>
+                    </a>
+                    <a class="card" href="work/raja-booking/">
+                        <video class="thumb" poster="work/assets/thumb-raja.jpg" autoplay muted loop playsinline preload="none" aria-hidden="true"><source src="work/assets/raja-reel.webm" type="video/webm"><source src="work/assets/raja-reel.mp4" type="video/mp4"></video>
+                        <p class="card-title">Train ticket booking bot</p>
+                        <p class="card-result">Watches sold-out trains, locks a seat the moment one opens, and reaches the payment page in under a minute, controlled from Telegram.</p>
+                        <div class="card-meta"><span class="tag">Python</span><span class="tag">Selenium</span><span class="tag">Telegram</span></div>
+                        <p class="card-cta">Read the case study &rarr;</p>
+                    </a>
+                    <a class="card" href="work/vehicle-inspection/">
+                        <img class="thumb" src="work/assets/thumb-vehicle.jpg" alt="" loading="lazy">
+                        <p class="card-title">Vehicle standards inspection tool</p>
+                        <p class="card-result">Reads lab test reports, checks each value against 85 standards, and drafts the inspection report: a week or more of work by hand.</p>
+                        <div class="card-meta"><span class="tag">Python</span><span class="tag">OCR</span><span class="tag">Claude API</span></div>
+                        <p class="card-cta">Read the case study &rarr;</p>
+                    </a>
+
+                    <p class="work-group">Open source</p>
+                    <div class="card">
+                        <a href="https://github.com/hoseinbehrad/bank-tracker" aria-label="Bank Tracker"><img class="thumb" src="work/assets/thumb-bank.jpg" alt="" loading="lazy"></a>
+                        <p class="card-title">Bank Tracker</p>
+                        <p class="card-result">Android app that turns Iranian bank SMS into a categorized spending history, one tap per transaction. No internet permission, so data never leaves the phone.</p>
+                        <div class="card-meta"><span class="tag">Kotlin</span><span class="tag">Compose</span><span class="tag">Room</span></div>
+                        <div class="card-links"><a href="https://github.com/hoseinbehrad/bank-tracker">Code</a></div>
+                    </div>
+                    <div class="card">
+                        <a href="https://github.com/hoseinbehrad/offvault" aria-label="OffVault"><img class="thumb" src="work/assets/thumb-offvault.jpg" alt="" loading="lazy"></a>
+                        <p class="card-title">OffVault</p>
+                        <p class="card-result">Android app that collects discount codes from SMS, filters them with a local parser plus Gemini, and sorts them by store and category.</p>
+                        <div class="card-meta"><span class="tag">Kotlin</span><span class="tag">Gemini</span></div>
+                        <div class="card-links"><a href="https://github.com/hoseinbehrad/offvault">Code</a></div>
+                    </div>
+                    <div class="card">
+                        <a href="https://github.com/hoseinbehrad/jobinja-job-watcher" aria-label="Jobinja Job Watcher"><img class="thumb" src="work/assets/thumb-jobwatcher.jpg" alt="" loading="lazy"></a>
+                        <p class="card-title">Jobinja Job Watcher</p>
+                        <p class="card-result">Watches 2,700+ company career pages and reports only new positions that match my keywords, with Persian spelling variants handled.</p>
+                        <div class="card-meta"><span class="tag">Python</span><span class="tag">BeautifulSoup</span></div>
+                        <div class="card-links"><a href="https://github.com/hoseinbehrad/jobinja-job-watcher">Code</a></div>
+                    </div>
+                    <div class="card">
+                        <a href="https://focusdeck-6pj.pages.dev/" aria-label="FocusDeck"><img class="thumb" src="work/assets/thumb-focusdeck.jpg" alt="" loading="lazy"></a>
+                        <p class="card-title">FocusDeck</p>
+                        <p class="card-result">Focus timer, time-blocking, daily and weekly reviews, and a 10,000-hour skill tracker. Installable web app with optional sync.</p>
+                        <div class="card-meta"><span class="tag">JavaScript</span><span class="tag">PWA</span><span class="tag">Cloudflare</span></div>
+                        <div class="card-links"><a href="https://focusdeck-6pj.pages.dev/">Live app</a></div>
+                    </div>
+
+                    <p class="work-foot">Research and publications are on my <a href="/academic/">academic page</a>. All code: <a href="https://github.com/hoseinbehrad">github.com/hoseinbehrad</a>.</p>
                 </section>
 
                 <section id="mylifestory-section">
@@ -3840,7 +4043,7 @@
                         <div class="entry-content">
                             <div class="entry-title">Business &amp; data analyst</div>
                             <div class="entry-meta">Project-based, 2022-2025</div>
-                            <div class="entry-desc">I started writing scripts to solve my own problems, then started solving them for clients. I built Python pipelines to analyze <strong>12M+ social media posts</strong> for positioning and campaign decisions, mapped a manual booking process and automated it to a success rate above 90%, and built a decision-support system that serves a 10,000+ user community in under a second. That instinct (find the pattern, then fix the process) is really the core of what I want to do in consulting.</div>
+                            <div class="entry-desc">I started writing scripts to solve my own problems, then started solving them for clients. I built Python pipelines to analyze <strong>12M+ social media posts</strong> for positioning and campaign decisions, automated a manual booking process end to end, built monitoring bots that alert clients to new commodity offers within seconds, and built a real-time matcher that replies in 0.63 seconds (median) across 1,000+ live messages. That instinct (find the pattern, then fix the process) is really the core of what I want to do in consulting.</div>
                             <div class="tags">
                             <span class="tag">Python</span>
                             <span class="tag">SQL</span>
@@ -3853,8 +4056,8 @@
                         <div class="entry-num">06</div>
                         <div class="entry-content">
                             <div class="entry-title">Capacity &amp; process analyst</div>
-                            <div class="entry-meta">Current role, IT infrastructure at Sharif</div>
-                            <div class="entry-desc">I measure what researchers need in compute and network against what's available, then size and deliver the gap: three times the network access points, 30+ systems renewed, five server racks, and GPU capacity expanded to 14 units. I gather requirements from researchers and staff, prioritize them against budget, and report progress to decision makers. It's taught me a lot about how technical reliability quietly shapes business outcomes.</div>
+                            <div class="entry-meta">IT infrastructure, Sharif University of Technology, 2024-2026</div>
+                            <div class="entry-desc">I measured what researchers needed in compute and network against what was available, then sized and delivered the gap: three times the network access points, 30+ systems renewed, five server racks, and GPU capacity expanded to 14 units. I gathered requirements from researchers and staff, prioritized them against budget, and reported progress to decision makers. It taught me a lot about how technical reliability quietly shapes business outcomes.</div>
                         </div>
                         </div>
                     
@@ -3863,7 +4066,7 @@
                         <div class="entry-content">
                             <div class="entry-title">Marketing researcher</div>
                             <div class="entry-meta">Academic, always ongoing</div>
-                            <div class="entry-desc">My research sits at the intersection of digital marketing, consumer behavior, and data analytics. I'm interested in the questions that look settled on the surface but aren't: <strong>what actually drives decisions online</strong>, and what the data says when you look carefully enough. My current project uses vision-language models to score how well Airbnb listing photos match their descriptions, then relates those scores to listing performance.</div>
+                            <div class="entry-desc">My research sits at the intersection of digital marketing, consumer behavior, and data analytics. I'm interested in the questions that look settled on the surface but aren't: <strong>what actually drives decisions online</strong>, and what the data says when you look carefully enough. My paper on e-WOM sentiment and sales is accepted at the <strong>Journal of Marketing Theory and Practice</strong>. My current project uses vision-language models to score how well Airbnb listing photos match their descriptions, then relates those scores to listing performance; it is in its second round of review at the European Journal of Marketing.</div>
                         </div>
                         </div>
                     
@@ -3928,6 +4131,11 @@
                                                     <title id="icons02-icon-2-title">Twitter</title>
                                                     <use xlink:href="#icon-0c4db87eff374f0f1ef47f8f043f0132"></use>
                                                 </svg><span class="label">Twitter</span></a></li>
+                                        <li><a class="n02" href="https://github.com/hoseinbehrad" role="button"><svg
+                                                    aria-labelledby="icons02-icon-3-title">
+                                                    <title id="icons02-icon-3-title">GitHub</title>
+                                                    <use xlink:href="#icon-github-hb"></use>
+                                                </svg><span class="label">GitHub</span></a></li>
                                     </ul>
                                 </div>
                                 <div>

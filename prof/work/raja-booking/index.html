@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Train ticket booking bot | Hosein Behrad</title>
+<meta name="description" content="A bot that watches sold-out trains on raja.ir, locks a seat the moment one opens, and reaches the payment page in under a minute, controlled from Telegram.">
+<meta property="og:title" content="Train ticket booking bot | Hosein Behrad">
+<meta property="og:description" content="A bot that watches sold-out trains on raja.ir, locks a seat the moment one opens, and reaches the payment page in under a minute, controlled from Telegram.">
+<meta property="og:image" content="https://hoseinbehrad.ir/prof/work/assets/thumb-raja.jpg">
+<meta property="og:type" content="article">
+<link rel="canonical" href="https://hoseinbehrad.ir/prof/work/raja-booking/">
+<link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+<link href="https://fonts.googleapis.com/css2?display=swap&family=Merriweather:wght@300;400;700;900&family=JetBrains+Mono:wght@400;500" rel="stylesheet">
+<link rel="stylesheet" href="../work.css">
+</head>
+<body>
+<main class="page">
+<nav class="top" aria-label="Site">
+  <a class="name" href="../../">Hosein Behrad.</a>
+  <a href="../../#work">&larr; All work</a>
+</nav>
+
+<p class="eyebrow">Personal project &middot; Process automation</p>
+<h1>Train ticket booking bot</h1>
+<p class="lede">Popular routes on raja.ir sell out, and seats come back at random when someone cancels. Catching one by hand means refreshing for hours. This bot does the waiting, locks the seat the moment it opens, and hands me the payment step on my phone.</p>
+<dl class="facts"><div><dt>Role</dt><dd>Designer and developer</dd></div><div><dt>Result</dt><dd>Seat to payment page in under a minute</dd></div><div><dt>Stack</dt><dd>Python, Selenium, Telegram Bot API, OCR</dd></div><div><dt>Code</dt><dd>Private</dd></div></dl>
+<figure><video poster="../assets/raja-reel.jpg" autoplay muted loop playsinline preload="metadata" aria-label="26-second motion summary of the booking flow"><source src="../assets/raja-reel.webm" type="video/webm"><source src="../assets/raja-reel.mp4" type="video/mp4"></video><figcaption>26-second motion summary of the booking flow</figcaption></figure>
+<h2>The process</h2>
+<ul>
+<li><strong>Monitor.</strong> Logs in, searches the route and date, and re-checks the target trains every 5 to 15 seconds at random intervals. It restarts its own browser every 20 to 30 minutes so long runs stay stable.</li>
+<li><strong>Book.</strong> When a seat opens it locks it, fills the passenger form, gets through the captcha step, and sends a screenshot of the booking to Telegram.</li>
+<li><strong>Pay.</strong> It picks a supported bank, finds the gateway fields (known IDs first, then a scoring heuristic for unfamiliar gateways), and asks for card details on Telegram. Those messages are deleted the moment they are read, and nothing is submitted until I reply "go".</li>
+<li><strong>Report.</strong> A silent heartbeat, a loud alert when a seat is found, and a stop notice with the reason if anything ends the run.</li>
+</ul>
+<figure><img src="../assets/raja-architecture.png" alt="Architecture: monitor, book and pay stages, with Telegram used for monitoring and control throughout" loading="lazy"><figcaption>Architecture of the bot.</figcaption></figure>
+<div class="result"><div class="num">&lt; 1 min</div><p>from a seat appearing to the bank payment page, with the booking proof and payment prompts already on my phone.</p></div>
+<h2>Design choices that mattered</h2>
+<ul>
+<li>Never refresh a live payment page. Once payment starts, a flag blocks every refresh and restart.</li>
+<li>Keep a human in the loop for money. The bot prepares everything; I approve the final submit.</li>
+<li>Fail loudly. Every exit sends a Telegram message, so a silent crash never looks like "still running".</li>
+</ul>
+
+<nav class="next" aria-label="More work">
+  <a href="../telegram-matcher/"><span class="label">&larr; Previous</span><span class="title">Real-time Telegram matcher</span></a>
+  <a href="../vehicle-inspection/" style="text-align:right"><span class="label">Next &rarr;</span><span class="title">Vehicle standards inspection tool</span></a>
+</nav>
+</main>
+</body>
+</html>

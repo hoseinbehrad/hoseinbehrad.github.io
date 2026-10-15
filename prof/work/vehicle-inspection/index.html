@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vehicle standards inspection tool | Hosein Behrad</title>
+<meta name="description" content="A tool that reads lab test reports, checks each value against its clause in the vehicle standards, and drafts the inspection report: a week or more of work by hand.">
+<meta property="og:title" content="Vehicle standards inspection tool | Hosein Behrad">
+<meta property="og:description" content="A tool that reads lab test reports, checks each value against its clause in the vehicle standards, and drafts the inspection report: a week or more of work by hand.">
+<meta property="og:image" content="https://hoseinbehrad.ir/prof/work/assets/vehicle-poster.png">
+<meta property="og:type" content="article">
+<link rel="canonical" href="https://hoseinbehrad.ir/prof/work/vehicle-inspection/">
+<link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+<link href="https://fonts.googleapis.com/css2?display=swap&family=Merriweather:wght@300;400;700;900&family=JetBrains+Mono:wght@400;500" rel="stylesheet">
+<link rel="stylesheet" href="../work.css">
+</head>
+<body>
+<main class="page">
+<nav class="top" aria-label="Site">
+  <a class="name" href="../../">Hosein Behrad.</a>
+  <a href="../../#work">&larr; All work</a>
+</nav>
+
+<p class="eyebrow">Product &middot; Document automation</p>
+<h1>Vehicle standards inspection tool</h1>
+<p class="lede">As a vehicle standards inspector, I check lab test results against 85 national standards and write the inspection report. Done by hand, one report takes <strong>a week or longer</strong>. I built a tool that reads the lab reports, matches every value to its clause, and drafts the report for the inspector to review and sign.</p>
+<dl class="facts"><div><dt>Role</dt><dd>Inspector and builder</dd></div><div><dt>Domain</dt><dd>85 vehicle standards</dd></div><div><dt>Stack</dt><dd>Python, pdfplumber, OCR, Claude API, python-docx</dd></div><div><dt>Code</dt><dd>Private (commercial)</dd></div></dl>
+<figure><video poster="../assets/vehicle-reel.jpg" autoplay muted loop playsinline preload="metadata" aria-label="20-second motion summary: reports in, inspection report out"><source src="../assets/vehicle-reel.webm" type="video/webm"><source src="../assets/vehicle-reel.mp4" type="video/mp4"></video><figcaption>20-second motion summary: reports in, inspection report out</figcaption></figure>
+<h2>How it works</h2>
+<ul>
+<li><strong>Read.</strong> Extracts text from lab report PDFs, and falls back to OCR for scanned pages.</li>
+<li><strong>Match.</strong> Maps each measured value to the right clause and its limit, and marks it pass or fail.</li>
+<li><strong>Write.</strong> Fills the official Word inspection report, ready for the inspector to check and sign.</li>
+</ul>
+<figure><img src="../assets/vehicle-poster.png" alt="Poster: test reports in, inspection report out, with read, match and write steps and a sample report table" loading="lazy"><figcaption>Sample values shown; no real test data.</figcaption></figure>
+<div class="result"><div class="num">Week+ &rarr; draft</div><p>A report that took a week or longer to put together by hand is now drafted by the tool. The inspector's time goes into review and judgement, not copying numbers.</p></div>
+<h2>Why I could build it</h2>
+<p>I have read all 85 standards and done the inspections myself. Knowing where the real work goes, and where errors creep in, decided what the tool automates and what it leaves to the inspector.</p>
+<p class="note">Interested in using this tool? Email <a href="mailto:hosein.behrad@gmail.com">hosein.behrad@gmail.com</a>.</p>
+
+<nav class="next" aria-label="More work">
+  <a href="../raja-booking/"><span class="label">&larr; Previous</span><span class="title">Train ticket booking bot</span></a>
+  <a href="../commodity-monitoring/" style="text-align:right"><span class="label">Next &rarr;</span><span class="title">Commodity portal monitoring</span></a>
+</nav>
+</main>
+</body>
+</html>
