@@ -33,7 +33,7 @@
 <li><strong>Pay.</strong> It picks a supported bank, finds the gateway fields (known IDs first, then a scoring heuristic for unfamiliar gateways), and asks for card details on Telegram. Those messages are deleted the moment they are read, and nothing is submitted until I reply "go".</li>
 <li><strong>Report.</strong> A silent heartbeat, a loud alert when a seat is found, and a stop notice with the reason if anything ends the run.</li>
 </ul>
-<figure><img src="../assets/raja-architecture.png" alt="Architecture: monitor, book and pay stages, with Telegram used for monitoring and control throughout" loading="lazy"><figcaption>Architecture of the bot.</figcaption></figure>
+<figure><a href="../assets/raja-architecture.png" target="_blank" rel="noopener"><img src="../assets/raja-architecture.png" alt="Architecture: monitor, book and pay stages, with Telegram used for monitoring and control throughout" loading="lazy"></a><figcaption>Architecture of the bot.</figcaption></figure>
 <div class="result"><div class="num">&lt; 1 min</div><p>from a seat appearing to the bank payment page, with the booking proof and payment prompts already on my phone.</p></div>
 <h2>Design choices that mattered</h2>
 <ul>

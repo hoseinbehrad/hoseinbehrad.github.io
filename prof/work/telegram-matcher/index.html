@@ -25,7 +25,7 @@
 <h1>Real-time Telegram matcher</h1>
 <p class="lede">In large Telegram groups, the first person to reply gets the deal. I built a listener that reads every new post, decides in milliseconds whether it is worth acting on, and messages the seller before a human could finish reading.</p>
 <dl class="facts"><div><dt>Role</dt><dd>Designer and developer</dd></div><div><dt>Scale</dt><dd>1,000+ live messages</dd></div><div><dt>Stack</dt><dd>Python, Telethon (MTProto), asyncio</dd></div><div><dt>Code</dt><dd>Private</dd></div></dl>
-<figure><img src="../assets/telegram-matcher-process.png" alt="Flowchart: new post, three yes/no checks, then message the seller and log the reply time" loading="lazy"><figcaption>Three checks, then act. Everything else is ignored.</figcaption></figure>
+<figure><a href="../assets/telegram-matcher-process.png" target="_blank" rel="noopener"><img src="../assets/telegram-matcher-process.png" alt="Flowchart: new post, three yes/no checks, then message the seller and log the reply time" loading="lazy"></a><figcaption>Three checks, then act. Everything else is ignored.</figcaption></figure>
 <h2>How it decides</h2>
 <ul>
 <li><strong>Is it a sale?</strong> The post must contain sale keywords.</li>
